@@ -53,7 +53,7 @@ const Footer = () => {
 
 			{/* Copyright */}
 			<p className="text-xs text-gray-600">
-				© 2026 - Tous droits réservés - Site Français 🟦​⬜​🟥​
+				© 2026 - Tous droits réservés - Application Française 🟦​⬜​🟥​
 			</p>
 		</footer>
 	);
