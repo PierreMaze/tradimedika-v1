@@ -1,12 +1,13 @@
 import LogoTradimedika from "./components/LogoTradimedika";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { PiPlantFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col w-full py-8 text-dark bg-neutral-100 justify-center items-center">
       {/* Logo */}
       <div className="mb-4">
-        <LogoTradimedika />
+        <PiPlantFill className="text-3xl text-accent lg:text-4xl" />
       </div>
 
       {/* Links */}
@@ -24,41 +25,6 @@ const Footer = () => {
           className="font-semibold transition-colors underline underline-offset-2 hover:text-accent duration-200"
         >
           Politique de Confidentialité
-        </a>
-        <a
-          href="/contact"
-          rel="noopener noreferrer"
-          className="font-semibold transition-colors underline underline-offset-2 hover:text-accent duration-200"
-        >
-          Contact
-        </a>
-      </div>
-
-      {/* Socials */}
-      <div className="flex mb-4 text-black transition-colors gap-4 duration-200">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accent"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accent"
-        >
-          <FaTwitter />
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accent"
-        >
-          <FaLinkedinIn />
         </a>
       </div>
 
