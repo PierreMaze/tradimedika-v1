@@ -8,11 +8,14 @@ const LogoTradimedika = () => {
         alt="Logo Tradimedika"
         title="Logo Tradimedika"
         aria-label="Logo Tradimedika"
-        className="flex self-center gap-2">
+        className="flex gap-2 self-center"
+      >
         <span>
-          <PiPlantFill className="text-3xl text-accent lg:text-4xl" />
+          <PiPlantFill className="text-accent text-3xl lg:text-4xl" />
         </span>
-        <span className="text-2xl font-black lg:text-3xl">TRADIMEDIKA</span>
+        <span className="text-2xl font-black tracking-wide lg:text-3xl">
+          TRADIMEDIKA
+        </span>
       </a>
     </>
   );

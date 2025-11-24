@@ -1,11 +1,11 @@
-import { PiPlantFill } from "react-icons/pi";
+import LogoTradimedika from "./components/LogoTradimedika";
 
 const Footer = () => {
   return (
-    <footer className="text-dark flex w-full flex-col items-center justify-center bg-neutral-100 py-8">
+    <footer className="text-dark border- flex w-full flex-col items-center justify-center border-t-2 border-dashed border-black/10 py-2 lg:w-2/3 lg:py-4">
       {/* Logo */}
       <div className="mb-4">
-        <PiPlantFill className="text-accent text-3xl lg:text-4xl" />
+        <LogoTradimedika />
       </div>
 
       {/* Links */}
