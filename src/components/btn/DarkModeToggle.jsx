@@ -21,10 +21,8 @@ export default function DarkModeToggle() {
 
       <motion.div
         layout
-        whileHover={{ scale: 1.07 }}
-        whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", bounce: 0.25, duration: 0.25 }}
-        className={`flex z-10 w-6 h-6 text-current rounded-full items-center justify-center ${isOn ? "bg-light " : "bg-dark "}`}
+        className={`flex z-10 w-6 h-6 text-current rounded-full group-hover:scale-105 items-center justify-center ${isOn ? "bg-light " : "bg-dark "}`}
       >
         {isOn ? (
           <HiSun
