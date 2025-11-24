@@ -8,7 +8,7 @@ const LogoTradimedika = () => {
         alt="Logo Tradimedika"
         title="Logo Tradimedika"
         aria-label="Logo Tradimedika"
-        className="flex gap-2 self-center"
+        className="flex items-center gap-2"
       >
         <span>
           <PiPlantFill className="text-accent text-3xl lg:text-4xl" />
