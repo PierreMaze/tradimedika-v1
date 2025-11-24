@@ -1,6 +1,9 @@
+// tradimedika-v1/src/layout/components/LogoTradimedika.jsx
 import { PiPlantFill } from "react-icons/pi";
+import { useTheme } from "../../context/ThemeContext";
 
 const LogoTradimedika = () => {
+  const { isDarkMode } = useTheme();
   return (
     <>
       <a
@@ -13,7 +16,9 @@ const LogoTradimedika = () => {
         <span>
           <PiPlantFill className="text-accent text-3xl lg:text-4xl" />
         </span>
-        <span className="text-2xl font-black tracking-wide lg:text-3xl">
+        <span
+          className={`text-2xl font-black tracking-wide transition delay-150 duration-300 ease-in-out lg:text-3xl ${isDarkMode ? "text-light" : "text-dark"}`}
+        >
           TRADIMEDIKA
         </span>
       </a>

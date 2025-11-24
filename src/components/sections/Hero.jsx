@@ -1,11 +1,14 @@
+// tradimedika-v1/src/components/sections/Hero.jsx
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { GiSprout } from "react-icons/gi";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMdArrowForward } from "react-icons/io";
+import { useTheme } from "../../context/ThemeContext";
 
-export default function Hero({ isDark, setIsDark }) {
+export default function Hero() {
+  const { isDarkMode } = useTheme();
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearch = () => {
@@ -20,7 +23,11 @@ export default function Hero({ isDark, setIsDark }) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className={`border-accent/60 text-dark flex items-center gap-2 rounded-full border-2 bg-white px-4 py-2`}
+          className={`flex items-center gap-2 rounded-full border-2 px-4 py-2 transition delay-150 duration-300 ease-in-out ${
+            isDarkMode
+              ? "bg-accent/20 border-accent/60 text-accent"
+              : "bg-light border-dark/60 text-dark"
+          } `}
         >
           <GiSprout className="text-accent text-lg" />
           <span className="font-sans text-sm font-semibold">
@@ -36,7 +43,11 @@ export default function Hero({ isDark, setIsDark }) {
         className="text-center"
       >
         <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl">
-          <span className={"text-dark"}>Soulagez vos symptomes</span>
+          <span
+            className={`${isDarkMode ? "text-light" : "text-dark"} transition delay-150 duration-300 ease-in-out`}
+          >
+            Soulagez vos symptomes
+          </span>
           <br />
           <span className="text-accent">naturellement</span>
         </h1>
@@ -47,7 +58,7 @@ export default function Hero({ isDark, setIsDark }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className={`text-dark/70 mb-4 max-w-2xl text-center text-base md:text-lg lg:mb-8`}
+        className={`${isDarkMode ? "text-light/70" : "text-dark/70"} mb-4 max-w-2xl text-center text-base transition delay-150 duration-300 ease-in-out md:text-lg lg:mb-8`}
       >
         Les bienfaits de la médecine douce pour traiter vos maux du quotidien.
       </motion.p>
@@ -60,17 +71,17 @@ export default function Hero({ isDark, setIsDark }) {
         className="mb-2 w-5/6 max-w-2xl"
       >
         <div
-          className={`"border-dark/10 relative flex items-center rounded-lg border bg-white shadow-sm`}
+          className={`"border-dark/10 relative flex items-center rounded-lg border shadow-sm`}
         >
           <HiMagnifyingGlass
-            className={`absolute left-4 text-xl ${isDark ? "text-light/60" : "text-dark/60"} `}
+            className={`absolute left-4 text-xl transition delay-150 duration-300 ease-in-out ${isDarkMode ? "text-light/60" : "text-dark/60"}`}
           />
           <input
             type="text"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder="Entrez vos symptomes (ex: maux de tete, fatigue...)"
-            className={`focus:ring-accent ring-dark/50 text-dark placeholder-dark/60 w-full rounded-lg bg-white py-4 pr-4 pl-12 text-sm ring-2 focus:outline-none lg:text-base`}
+            className={`transition delay-150 duration-300 ease-in-out ${isDarkMode ? "ring-light/40 text-light bg-light/10" : "ring-dark/50 text-dark bg-white "} focus:ring-accent w-full rounded-lg py-4 pr-4 pl-12 text-sm ring-2 focus:outline-none lg:text-base`}
           />
         </div>
       </motion.div>
@@ -111,7 +122,7 @@ export default function Hero({ isDark, setIsDark }) {
           >
             <FaCheck className="text-accent text-sm" />
             <span
-              className={`text-sm font-semibold ${isDark ? "text-light/80" : "text-dark/60"} `}
+              className={`text-sm font-semibold transition delay-150 duration-300 ease-in-out ${isDarkMode ? "text-light/80" : "text-dark/60"} `}
             >
               {feature}
             </span>
