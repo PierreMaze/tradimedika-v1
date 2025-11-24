@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
 
       {/* Links */}
-      <div className="flex flex-col mb-4 text-xs gap-2 decoration-1 sm:flex-row sm:gap-6">
+      <div className="flex flex-col mb-4 text-center text-xs gap-2 decoration-1 lg:flex-row lg:text-start lg:gap-6">
         <a
           href="/mention-legales"
           rel="noopener noreferrer"
