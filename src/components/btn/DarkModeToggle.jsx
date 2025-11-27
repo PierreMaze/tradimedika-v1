@@ -1,36 +1,43 @@
-import { useState } from "react";
+// tradimedika-v1/src/components/btn/DarkModeToggle.jsx
 import { motion } from "framer-motion";
 import { HiMoon, HiSun } from "react-icons/hi2";
+import { useTheme } from "../../context/ThemeContext";
 
 export default function DarkModeToggle() {
-  const [isOn, setIsOn] = useState(false);
-
-  const toggleSwitch = () => setIsOn(!isOn);
+  const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
     <motion.button
       aria-label="Toggle dark mode"
-      onClick={toggleSwitch}
-      className={`flex w-14 h-8 p-1 rounded-full border-2 cursor-pointer transition-all group relative items-center duration-300 ease-out ${isOn ? "justify-end bg-accent border-light" : "justify-start bg-light border-dark"}`}
+      onClick={toggleDarkMode}
+      className={`group relative flex h-8 w-14 cursor-pointer items-center rounded-full border-2 p-1 transition-all duration-300 ease-out ${
+        isDarkMode
+          ? "bg-accent border-accent/80 justify-end"
+          : "bg-light border-dark justify-start"
+      }`}
     >
       {/* Glow / halo UX */}
       <motion.span
         layout
-        className={`z-0 rounded-full border-none transition-opacity pointer-events-none absolute inset-0 duration-300 ${isOn ? "opacity-30 bg-accent" : "opacity-0"}`}
+        className={`pointer-events-none absolute inset-0 z-0 rounded-full border-none transition-opacity duration-300 ${
+          isDarkMode ? "bg-accent opacity-30" : "opacity-0"
+        }`}
       />
 
       <motion.div
         layout
         transition={{ type: "spring", bounce: 0.25, duration: 0.25 }}
-        className={`flex z-10 w-6 h-6 text-current rounded-full group-hover:scale-105 items-center justify-center ${isOn ? "bg-light " : "bg-dark "}`}
+        className={`z-10 flex h-6 w-6 items-center justify-center rounded-full text-current group-hover:scale-105 ${
+          isDarkMode ? "bg-light " : "bg-dark "
+        }`}
       >
-        {isOn ? (
+        {isDarkMode ? (
           <HiSun
-            className={`text-base text-dark transition-colors duration-300`}
+            className={`text-dark text-base transition-colors duration-300`}
           />
         ) : (
           <HiMoon
-            className={`text-xs text-light transition-colors duration-300`}
+            className={`text-light text-xs transition-colors duration-300`}
           />
         )}
       </motion.div>

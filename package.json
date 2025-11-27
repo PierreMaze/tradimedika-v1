@@ -3,6 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
   "scripts": {
     "dev": "vite",
     "reset": "pnpm run clean && pnpm i && pnpm run dev",
@@ -33,6 +38,8 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "vite": "^7.2.4"
   },
   "author": "Pierre MAZELAYGUE",

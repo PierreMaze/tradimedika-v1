@@ -1,20 +1,28 @@
+// tradimedika-v1/src/layout/components/LogoTradimedika.jsx
 import { PiPlantFill } from "react-icons/pi";
+import { useTheme } from "../../context/ThemeContext";
 
-export default function LogoTradimedika() {
-	return (
-		<>
-			<a
-				href="/"
-				alt="Logo Tradimedika"
-				title="Logo Tradimedika"
-				aria-label="Logo Tradimedika"
-				className="flex self-center gap-2"
-			>
-				<span>
-					<PiPlantFill className="text-3xl text-accent lg:text-4xl" />
-				</span>
-				<span className="text-2xl font-black lg:text-3xl">TRADIMEDIKA</span>
-			</a>
-		</>
-	);
-}
+const LogoTradimedika = () => {
+  const { isDarkMode } = useTheme();
+  return (
+    <>
+      <a
+        href="/"
+        alt="Logo Tradimedika"
+        title="Logo Tradimedika"
+        aria-label="Logo Tradimedika"
+        className="flex items-center gap-2"
+      >
+        <span>
+          <PiPlantFill className="text-accent text-3xl lg:text-4xl" />
+        </span>
+        <span
+          className={`text-2xl font-black tracking-wide transition duration-300 ease-in-out lg:text-3xl ${isDarkMode ? "text-light" : "text-dark"}`}
+        >
+          TRADIMEDIKA
+        </span>
+      </a>
+    </>
+  );
+};
+export default LogoTradimedika;
