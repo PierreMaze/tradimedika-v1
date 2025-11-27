@@ -161,7 +161,7 @@ src/
 
 -  ![#f1f0f1](https://placehold.co/15x15/f1f0f1/f1f0f1.png) **Light** : Blanc moderne (#f1f0f1)
 -  ![#23272d](https://placehold.co/15x15/23272d/23272d.png) **Dark** : Noir élégant (#23272d)
--  ![#60bd97](https://placehold.co/15x15/60bd97/60bd97.png) **Accent** : Vert élégant (#60bd97)
+-  ![#60bd97](https://placehold.co/15x15/60bd97/60bd97.png) **Accent** : Vert émeraude (#60bd97)
 
 ### 📝 Typographie
 
