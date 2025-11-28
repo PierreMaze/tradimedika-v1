@@ -4,16 +4,16 @@
 
 1. [Principe général](#principe-général)
 2. [Structure du nom](#structure-du-nom)
+   - [Format recommandé](#format-recommandé)
+   - [Types de branches](#types-de-branches)
+   - [Scope (module / zone)](#scope-module--zone)
+   - [Description (kebab-case)](#description-kebab-case)
 
-   * [Format recommandé](#format-recommandé)
-   * [Types de branches](#types-de-branches)
-   * [Scope (module / zone)](#scope-module--zone)
-   * [Description (kebab-case)](#description-kebab-case)
 3. [Règles essentielles](#règles-essentielles)
 4. [Exemples](#exemples)
+   - [Bonnes pratiques (valide)](#bonnes-pratiques-valide)
+   - [Cas à éviter (mauvais)](#cas-à-éviter-mauvais)
 
-   * [Bonnes pratiques (valide)](#bonnes-pratiques-valide)
-   * [Cas à éviter (mauvais)](#cas-à-éviter-mauvais)
 5. [Workflow recommandé](#workflow-recommandé)
 6. [Commandes Git — Modèles](#commandes-git--modèles)
 7. [Validation via Expression Régulière (RegExp)](#validation-via-expression-régulière-regexp)
@@ -36,42 +36,42 @@ Standardiser les noms de branches pour faciliter la lecture, la revue, l'automat
 <type>/<scope>/<short-description>
 ```
 
-* **type** : `feature` | `hotfix` | `refactor` | `docs` | `test` | `chore`
-* **scope** : zone/module (`client`, `server`, `api`, `auth`, `dashboard`, `patient`, ...)
-* **short-description** : action/objectif en **kebab-case** (lowercase, `-`, pas d'accents ni d'espaces)
+- **type** : `feature` | `hotfix` | `refactor` | `docs` | `test` | `chore`
+- **scope** : zone/module (`client`, `server`, `api`, `auth`, `dashboard`, `patient`, ...)
+- **short-description** : action/objectif en **kebab-case** (lowercase, `-`, pas d'accents ni d'espaces)
 
 > Option : inclure le ticket si vous en avez un. Exemple de patterns (choisir une seule méthode) :
 >
-> * `type/ISSUE-123/short-desc` → `feature/ISSUE-123/add-login-form`
-> * `type/scope/123-short-desc` → `feature/client/123-add-login-form`
+> - `type/ISSUE-123/short-desc` → `feature/ISSUE-123/add-login-form`
+> - `type/scope/123-short-desc` → `feature/client/123-add-login-form`
 
 ### Types de branches
 
-* `feature` : nouvelles fonctionnalités
-* `hotfix` : correction critique sur `main`
-* `refactor` : refactorisation du code
-* `docs` : documentation
-* `test` : tests
-* `chore` : tâches d’entretien / CI / dépendances
+- `feature` : nouvelles fonctionnalités
+- `hotfix` : correction critique sur `main`
+- `refactor` : refactorisation du code
+- `docs` : documentation
+- `test` : tests
+- `chore` : tâches d’entretien / CI / dépendances
 
 ### Scope (module / zone)
 
-* Indique où le changement intervient (ex : `client`, `server`, `api`, `auth`, `dashboard`, `patient`)
-* Permet le tri, labels automatiques et pipelines CI
+- Indique où le changement intervient (ex : `client`, `server`, `api`, `auth`, `dashboard`, `patient`)
+- Permet le tri, labels automatiques et pipelines CI
 
 ### Description (kebab-case)
 
-* Une seule responsabilité par branche
-* Lowercase, séparateur `-`, pas d’accents ni caractères spéciaux
+- Une seule responsabilité par branche
+- Lowercase, séparateur `-`, pas d’accents ni caractères spéciaux
 
 ---
 
 ## Règles essentielles
 
-* Maximum recommandé : 3 segments (`type/scope/description`)
-* Autoriser 4 segments uniquement si nécessaire (`type/scope/subscope/description`)
-* Nom explicite et clair
-* Supprimer la branche locale et distante après merge
+- Maximum recommandé : 3 segments (`type/scope/description`)
+- Autoriser 4 segments uniquement si nécessaire (`type/scope/subscope/description`)
+- Nom explicite et clair
+- Supprimer la branche locale et distante après merge
 
 ---
 
@@ -118,16 +118,16 @@ git push origin --delete feature/client/form/patient-symptom
 
 ## Automatisation GitHub (à rajouter)
 
-* Linter de noms de branches via GitHub Actions
-* Labels automatiques selon `scope`
-* Conventional Commits + génération automatique de changelog
+- Linter de noms de branches via GitHub Actions
+- Labels automatiques selon `scope`
+- Conventional Commits + génération automatique de changelog
 
 ---
 
 ## Durée de vie & bonnes pratiques
 
-* `feature/*` : courte durée (< 30 jours), rebase/merge souvent depuis `dev`
-* `hotfix/*` : créer depuis `main`, merger sur `main` et `dev`
-* Supprimer branches distantes après merge
+- `feature/*` : courte durée (< 30 jours), rebase/merge souvent depuis `dev`
+- `hotfix/*` : créer depuis `main`, merger sur `main` et `dev`
+- Supprimer branches distantes après merge
 
 ---
