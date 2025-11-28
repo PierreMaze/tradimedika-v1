@@ -5,7 +5,6 @@
 - **Node.js** >= 18.0.0
 - **pnpm** >= 8.0.0 (recommandé) ou npm
 
-## Pas à pas
 
 ### 1. Cloner le repository
 
