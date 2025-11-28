@@ -21,10 +21,8 @@
 - [🎯 À propos](#-à-propos)
 - [✨ Fonctionnalités](#-fonctionnalités)
 - [🛠️ Stack technique](#️-stack-technique)
-- [🚀 Installation](#-installation)
 - [🎨 Design System](#-design-system)
 - [⚡ Performance](#-performance)
-- [📚 Scripts disponibles](#-scripts-disponibles)
 - [📞 Contact](#-contact)
 
 ---
