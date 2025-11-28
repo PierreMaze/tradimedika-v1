@@ -3,10 +3,10 @@
 <div align="center">
 
 [![React](https://img.shields.io/badge/React-19.2.0-38B2AC?style=for-the-badge&logo=react&logoColor=38B2AC)](https://react.dev/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.3-61DAFB?style=for-the-badge&logo=tailwind-css&logoColor=61DAFB)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-12.23.22-BE185D?style=for-the-badge&logo=framer&logoColor=BE185D)](https://motion.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.17-61DAFB?style=for-the-badge&logo=tailwind-css&logoColor=61DAFB)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-12.23.24-BE185D?style=for-the-badge&logo=framer&logoColor=BE185D)](https://motion.dev/)
 [![React Icons](https://img.shields.io/badge/React%20Icons-5.5.0-FF0000?style=for-the-badge&logo=react&logoColor=red)](https://react-icons.github.io/react-icons/)
-[![Vite](https://img.shields.io/badge/Vite-6.3.6-FFD700?style=for-the-badge&logo=vite&logoColor=yellow)](https://vite.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.4-FFD700?style=for-the-badge&logo=vite&logoColor=yellow)](https://vite.dev/)
 
 **Un Site web moderne et performant développé avec React, TailwindCSS et Framer Motion**
 
