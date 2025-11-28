@@ -16,7 +16,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "fix": "prettier --write .",
-    "clean": "rm -rf node_modules pnpm-lock.yaml package-lock.json dist"
+    "clean": "rm -rf node_modules pnpm-lock.yaml package-lock.json dist && clear"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
