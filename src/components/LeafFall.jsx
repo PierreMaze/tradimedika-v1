@@ -29,22 +29,36 @@ export default function LeafFall() {
       const keyframesCount = 20;
 
       const xOffsets = Array.from({ length: keyframesCount }).map(
-        (_, idx) => amplitude * Math.sin((idx / keyframesCount) * Math.PI * 2)
+        (_, idx) => amplitude * Math.sin((idx / keyframesCount) * Math.PI * 2),
       );
 
       const rotateKeyframes = Array.from({ length: keyframesCount }).map(
-        (_, idx) => rotationStart + Math.sin((idx / keyframesCount) * Math.PI * 4) * 45
+        (_, idx) =>
+          rotationStart + Math.sin((idx / keyframesCount) * Math.PI * 4) * 45,
       );
 
       const yKeyframes = Array.from({ length: keyframesCount }).map(
-        (_, idx) => `${(idx / keyframesCount) * 100}vh`
+        (_, idx) => `${(idx / keyframesCount) * 100}vh`,
       );
 
       const opacityKeyframes = Array.from({ length: keyframesCount }).map(
-        (_, idx) => (idx / keyframesCount < 0.66 ? 1 : 1 - (idx / keyframesCount - 0.66) / 0.34)
+        (_, idx) =>
+          idx / keyframesCount < 0.66
+            ? 1
+            : 1 - (idx / keyframesCount - 0.66) / 0.34,
       );
 
-      return { startX, startY, scale, duration, xOffsets, rotateKeyframes, yKeyframes, opacityKeyframes, delay };
+      return {
+        startX,
+        startY,
+        scale,
+        duration,
+        xOffsets,
+        rotateKeyframes,
+        yKeyframes,
+        opacityKeyframes,
+        delay,
+      };
     });
   }, [COUNT]);
 
@@ -57,7 +71,12 @@ export default function LeafFall() {
           key={i}
           className="absolute"
           style={{ left: `${leaf.startX}%`, top: `${leaf.startY}%` }}
-          initial={{ y: 0, scale: leaf.scale, rotate: leaf.rotateKeyframes[0], opacity: 1 }}
+          initial={{
+            y: 0,
+            scale: leaf.scale,
+            rotate: leaf.rotateKeyframes[0],
+            opacity: 1,
+          }}
           animate={{
             y: leaf.yKeyframes,
             x: leaf.xOffsets,

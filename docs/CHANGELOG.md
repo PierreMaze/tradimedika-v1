@@ -5,6 +5,7 @@
 ## [0.1.1] - 2025-11-28
 
 ### <u>feat:</u>
+
 - Added `LeafFall.jsx` component to render animated falling leaves in the background
 - Dark/light mode support via ThemeContext
 - Smooth, infinite animation using Framer Motion with randomized offsets, rotations, and scales
