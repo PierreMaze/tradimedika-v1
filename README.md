@@ -10,7 +10,9 @@
 
 **Un Site web moderne et performant développé avec React, TailwindCSS et Framer Motion**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e8eaa554-ddd6-4d97-9482-07787d46d648/deploy-status)](https://app.netlify.com/projects/tradimedika/deploys)[🌐 **Voir le site**](https://tradimedika.netlify.app/) • [🐛 **Signaler un bug**](https://github.com/PierreMaze/) • [💬 **Discuter**](https://www.linkedin.com/in/pierremazelaygue/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8eaa554-ddd6-4d97-9482-07787d46d648/deploy-status)](https://app.netlify.com/projects/tradimedika/deploys)
+
+[🌐 **Voir le site**](https://tradimedika.netlify.app/) • [🐛 **Signaler un bug**](https://github.com/PierreMaze/) • [💬 **Discuter**](https://www.linkedin.com/in/pierremazelaygue/)
 
 </div>
 
