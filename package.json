@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "http://PierreMaze.github.io/tradimedika",
+  "homepage": "http://pierremaze.github.io/tradimedika",
   "prettier": {
     "plugins": [
       "prettier-plugin-tailwindcss"
@@ -20,7 +20,7 @@
     "fix": "prettier --write .",
     "clean": "rm -rf node_modules pnpm-lock.yaml package-lock.json dist && clear",
     "redeploy": "pnpm build",
-	  "deploy": "gh-pages -d build"
+	"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
