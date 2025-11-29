@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <GiSprout
               className={`text-lg transition duration-300 ease-in-out ${
-                isDarkMode ? "text-emerald-500" : "text-emerald-500"
+                isDarkMode ? "text-emerald-500" : "text-emerald-600"
               }`}
             />
             <span className="font-sans text-sm font-semibold">
