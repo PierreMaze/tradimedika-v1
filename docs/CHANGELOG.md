@@ -9,12 +9,17 @@
 - Correct vertical content alignment in layout components
 - Add explicit height to `header` to ensure consistent centering
 - Fix y-axis spacing in `footer`
+- Correct label background in `Hero` section for dark mode
+- Apply `bg-light dark:bg-dark` fallback to ensure proper contrast
+- Improve text visibility with `text-dark` and `dark:text-light`
 
 ### <u>update:</u>
 
 - Replace custom `accent` color variable with Tailwind `emerald`
 - Improve UI/UX consistency across layout
 - Update balise`<link>` in file `index.hmtl`
+- Ensure dark mode hierarchy is respected in theme switching
+- Minor UX improvements in Hero labels
 
 ---
 
