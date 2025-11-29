@@ -16,9 +16,8 @@
 
 5. [Workflow recommandé](#workflow-recommandé)
 6. [Commandes Git — Modèles](#commandes-git--modèles)
-7. [Validation via Expression Régulière (RegExp)](#validation-via-expression-régulière-regexp)
-8. [Automatisation GitHub (optionnel)](#automatisation-github-optionnel)
-9. [Durée de vie & bonnes pratiques](#durée-de-vie--bonnes-pratiques)
+7. [Automatisation GitHub (optionnel)](#automatisation-github-optionnel)
+8. [Durée de vie & bonnes pratiques](#durée-de-vie--bonnes-pratiques)
 
 ---
 
