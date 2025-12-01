@@ -47,9 +47,7 @@
 
 ### 📚 Documentation
 
-- [Convention de nommage des branches](./docs/CONVENTION_BRANCH.md)
-- [Convention de la création d'une PR](./docs/CONVENTION_PR.md)
-- [Architecture](./docs/ARCHITECTURE.md)
+- [Architecture](./ARCHITECTURE.md)
 - [Historique des versions](./CHANGELOG.md)
 
 ---
