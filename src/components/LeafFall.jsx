@@ -56,15 +56,22 @@ export default function LeafFall() {
 
       // Animation jusqu'à 110vh pour disparition complète
       const yKeyframes = Array.from({ length: KEYFRAMES_COUNT + 1 }).map(
-        (_, index) => `${(index / KEYFRAMES_COUNT) * 110}vh`,
+        (_, index) => `${(index / KEYFRAMES_COUNT) * 100}vh`,
       );
 
-      // Opacité réduite et disparition progressive
+      // Opacité réduite et disparition progressive et naturelle
       const opacityKeyframes = Array.from({ length: KEYFRAMES_COUNT + 1 }).map(
         (_, index) => {
           const progress = index / KEYFRAMES_COUNT;
-          if (progress < 0.7) return 0.7;
-          return 0.7 * (1 - (progress - 0.7) / 0.3);
+          // Fade in rapide au début
+          if (progress < 0.1) return progress * 7;
+          // Opacité stable au milieu
+          if (progress < 0.6) return 0.7;
+          // Fade out progressif et smooth sur les 40% restants
+          const fadeProgress = (progress - 0.6) / 0.4;
+          // Utilisation d'une courbe ease-out pour un fondu plus naturel
+          const easedFade = 1 - Math.pow(fadeProgress, 1.5);
+          return 0.7 * easedFade;
         },
       );
 
