@@ -95,9 +95,7 @@
 
 ### <u>add:</u>
 
-- Added the `CHANGELOG.md` file to `docs/` describing project updates
-- Implemented the `CONVENTION_BRANCH.md` file detailing branch conventions, PR templates, and contribution guidelines
-- Added the `CONVENTION_PR.md` file to standardize pull request creation
+- Added the `CHANGELOG.md` file
 - Initial documentation `README.md`
 
 ### <u>standardization:</u>
