@@ -5,11 +5,9 @@
 ### <u>fix:</u>
 
 - Fix LeafFall visibility in dark mode by adjusting z-index layering in Hero section
-- Fixes dark theme behavior on the `Layout` and `Sidebar` components
 - Fixes horizontal layout overflow on mobile
 - Fixes the display of the main CTA button in dark mode
-- Fixes the incorrect `accent-light` import value in `tailwind.config.js`
-
+- Fixes the incorrect `accent-light`
 ### <u>refactor:</u>
 
 - Improve LeafFall fade-out animation with smooth, natural easing curve
@@ -23,11 +21,6 @@
 - Harmonizes heading size hierarchy (h1–h4) for UI consistency
 - Simplifies the color palette: removes custom accent variables
 - Ensure badge, input field, and interactive elements properly layer above background animation
-
-### <u>optimization:</u>
-
-- Optimizes the structure in `index.html` (meta tags + link + CSS order)
-- Adjusts spacing between the `Hero` and `Features` sections
 
 ### <u>update:</u>
 
