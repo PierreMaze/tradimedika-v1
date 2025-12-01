@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className={`flex items-center gap-2 rounded-full border-2 px-4 py-2 transition duration-300 ease-in-out ${
               isDarkMode
-                ? "bg-accent/20 border-emerald-500/60 text-emerald-500"
+                ? "bg-dark border-emerald-500/60 text-emerald-500"
                 : "bg-light border-dark/60 text-dark"
             } `}
           >
@@ -78,7 +78,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className={`${isDarkMode ? "text-light/70" : "text-dark/70"} mb-4 max-w-2xl text-center text-base transition duration-300 ease-in-out md:text-lg lg:mb-8`}
+          className={`${isDarkMode ? "text-neutral-400" : "text-neutral-600"} mb-4 max-w-2xl text-center text-base transition duration-300 ease-in-out md:text-lg lg:mb-8`}
         >
           Les bienfaits de la médecine douce pour traiter vos maux du quotidien.
         </motion.p>
@@ -94,14 +94,14 @@ export default function Hero() {
             className={`"border-dark/10 relative flex items-center rounded-lg border shadow-sm`}
           >
             <HiMagnifyingGlass
-              className={`absolute left-4 text-xl transition duration-300 ease-in-out ${isDarkMode ? "text-light/60" : "text-dark/60"}`}
+              className={`absolute left-4 text-xl transition duration-300 ease-in-out ${isDarkMode ? "text-light" : "text-dark/60"}`}
             />
             <input
               type="text"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Entrez vos symptomes (ex: maux de tete, fatigue...)"
-              className={`transition duration-300 ease-in-out ${isDarkMode ? "ring-light/40 text-light bg-light/10 focus:ring-emerald-500" : "ring-dark/50 text-dark bg-white focus:ring-emerald-600"} w-full rounded-lg py-4 pr-4 pl-12 text-sm ring-2 focus:outline-none lg:text-base`}
+              className={`transition duration-300 ease-in-out ${isDarkMode ? "text-light bg-dark placeholder-neutral-400 ring-neutral-500 focus:ring-emerald-500" : "text-dark bg-white placeholder-neutral-700 ring-neutral-600 focus:ring-emerald-600"} w-full rounded-lg py-4 pr-4 pl-12 text-sm ring-2 focus:outline-none lg:text-base`}
             />
           </div>
         </motion.div>
@@ -114,7 +114,7 @@ export default function Hero() {
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.6, delay: 0.5 }}
           onClick={handleSearch}
-          className={`transition duration-300 ease-in-out ${isDarkMode ? "bg-emerald-500 hover:bg-emerald-500/90" : "bg-emerald-600 hover:bg-emerald-600/90"} flex items-center gap-2 rounded-lg px-8 py-4 font-semibold text-white shadow-lg transition-colors`}
+          className={`transition duration-300 ease-in-out ${isDarkMode ? "bg-emerald-600 hover:bg-emerald-700" : "bg-emerald-600 hover:bg-emerald-600/90"} flex items-center gap-2 rounded-lg px-8 py-4 font-semibold text-white shadow-lg transition-colors`}
         >
           <span>Decouvrir mes solutions</span>
           <IoMdArrowForward className="text-xl" />
@@ -144,7 +144,7 @@ export default function Hero() {
                 className={`${isDarkMode ? "text-emerald-500/80" : "text-emerald-600/80"} text-sm`}
               />
               <span
-                className={`text-sm font-semibold transition duration-300 ease-in-out ${isDarkMode ? "text-light/80" : "text-dark/60"} `}
+                className={`text-sm font-semibold transition duration-300 ease-in-out ${isDarkMode ? "text-neutral-400" : "text-neutral-600"} `}
               >
                 {feature}
               </span>
