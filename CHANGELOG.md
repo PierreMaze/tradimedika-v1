@@ -95,22 +95,22 @@
 
 ### <u>add:</u>
 
-- Ajout du fichier `CHANGELOG.md` dans `docs/` décrivant les mises à jour du projet
-- Mise en place du fichier `CONVENTION_BRANCH.md` détaillant conventions de branches, modèles de PR et guidelines de contribution
-- Ajout du fichier `CONVENTION_PR.md` pour standardiser la création de pull requests
-- Documentation initiale `README.md`
+- Added the `CHANGELOG.md` file to `docs/` describing project updates
+- Implemented the `CONVENTION_BRANCH.md` file detailing branch conventions, PR templates, and contribution guidelines
+- Added the `CONVENTION_PR.md` file to standardize pull request creation
+- Initial documentation `README.md`
 
 ### <u>standardization:</u>
 
-- Standardisation du format du Changelog pour les futures releases
-- Alignement du workflow Git sur la convention de branches fixée (feature, fix, hotfix, docs, refactor)
+- Standardized the Changelog format for future releases
+- Aligned the Git workflow with the established branch convention (feature, fix, hotfix, docs, refactor)
 
 ### <u>update:</u>
 
-- Mise à jour du README avec sections Installation, Utilisation et Liens vers la documentation
+- Updated the README with Installation, Usage, and Documentation Links sections
 
 ### <u>fix:</u>
 
-- Clarification sur l'organisation de la documentation suite à l'issue #6
+- Clarification on Documentation organization following issue #6
 
 ---
