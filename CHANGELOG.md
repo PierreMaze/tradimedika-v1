@@ -36,12 +36,10 @@
 - Add explicit height to `header` to ensure consistent centering
 - Fix y-axis spacing in `footer`
 - Correct label background in `Hero` section for dark mode
-- Apply `bg-light dark:bg-dark` fallback to ensure proper contrast
 
 ### <u>refactor:</u>
 
 - Replace custom `accent` color variable with Tailwind `emerald`
-- Improve text visibility with `text-dark` and `dark:text-light`
 
 ### <u>standardization:</u>
 
@@ -50,7 +48,7 @@
 
 ### <u>optimization:</u>
 
-- Update balise`<link>` in file `index.hmtl`
+- Update balise`<link>` in file `index.hmtl` for google font
 
 ### <u>update:</u>
 
@@ -109,6 +107,6 @@
 
 ### <u>fix:</u>
 
-- Clarification on Documentation organization following issue #6
+- Clarification on Documentation organization following [issue #6](https://github.com/PierreMaze/tradimedika/issues/6)
 
 ---
