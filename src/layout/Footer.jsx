@@ -1,11 +1,15 @@
 // tradimedika-v1/src/layout/Footer.jsx
+import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import LogoTradimedika from "./components/LogoTradimedika";
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
-    <footer
+    <motion.footer
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
       className={`w-full transition duration-300 ease-in-out lg:py-4 ${isDarkMode ? "text-light bg-dark" : "text-dark bg-light"}`}
     >
       <div
@@ -43,7 +47,7 @@ const Footer = () => {
           © 2026 - Tous droits réservés - Application Française 🟦​⬜​🟥​
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
