@@ -60,8 +60,6 @@ pnpm fix              # Correction automatique Prettier
 
 # Maintenance
 pnpm clean            # Nettoyage des dépendances uniquement
-pnpm reset            # Redémarrage du serveur de développement avec suppression + ré-installation des dépendances
-pnpm preload          # Installation + démarrage rapide
 ```
 
 ---
