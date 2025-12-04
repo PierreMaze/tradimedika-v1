@@ -38,7 +38,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className={`flex items-center gap-2 rounded-full border-2 px-4 py-2 shadow-md transition duration-300 ease-in-out ${
                 isDarkMode
-                  ? "bg-dark border-emerald-500/60 text-emerald-500"
+                  ? "border-emerald-500/60 bg-emerald-950 text-emerald-500"
                   : "border-dark/60 text-dark bg-white"
               } `}
             >
