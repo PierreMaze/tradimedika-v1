@@ -125,7 +125,7 @@ export default function LeafFall() {
         >
           <GiFallingLeaf
             size={24 * leaf.scale}
-            className={`drop-shadow-lg ${isDarkMode ? "text-emerald-500" : "text-emerald-600"}`}
+            className={`drop-shadow-lg ${isDarkMode ? "text-emerald-500/75" : "text-emerald-600/75"}`}
           />
         </motion.div>
       ))}
