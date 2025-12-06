@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { useTheme } from "../../context/ThemeContext";
 import symptomsData from "../../data/symptoms.json";
 import synonymsData from "../../data/synonyms.json";
 
@@ -27,7 +26,6 @@ export default function SymptomsSelector({
   selectedSymptoms = [],
   placeholder,
 }) {
-  const { isDarkMode } = useTheme();
   const [inputValue, setInputValue] = useState("");
   const [filteredSymptoms, setFilteredSymptoms] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -173,16 +171,8 @@ export default function SymptomsSelector({
   return (
     <div className="relative w-full">
       {/* Input avec icône de recherche */}
-      <div
-        className={`relative flex items-center rounded-lg border shadow-sm ${
-          isDarkMode ? "border-neutral-700" : "border-dark/10"
-        }`}
-      >
-        <HiMagnifyingGlass
-          className={`absolute left-4 text-xl transition duration-300 ease-in-out ${
-            isDarkMode ? "text-light" : "text-dark/60"
-          }`}
-        />
+      <div className="border-dark/10 relative flex items-center rounded-lg border shadow-sm dark:border-neutral-700">
+        <HiMagnifyingGlass className="text-dark/60 dark:text-light absolute left-4 text-xl transition duration-300 ease-in-out" />
         <input
           ref={inputRef}
           type="text"
@@ -198,23 +188,15 @@ export default function SymptomsSelector({
           aria-activedescendant={
             selectedIndex >= 0 ? `symptom-option-${selectedIndex}` : undefined
           }
-          className={`w-full rounded-lg py-4 pr-4 pl-12 text-sm ring-2 transition duration-300 ease-in-out focus:outline-none lg:text-base 2xl:text-lg ${
+          className={`text-dark dark:bg-dark dark:text-light w-full rounded-lg bg-white py-4 pr-4 pl-12 text-sm ring-2 ring-neutral-600 transition duration-300 ease-in-out placeholder:text-neutral-700 focus:ring-emerald-600 focus:outline-none lg:text-base 2xl:text-lg dark:ring-neutral-500 dark:placeholder:text-neutral-400 dark:focus:ring-emerald-500 ${
             selectedSymptoms.length >= 5 ? "cursor-not-allowed opacity-50" : ""
-          } ${
-            isDarkMode
-              ? "bg-dark text-light placeholder-neutral-400 ring-neutral-500 focus:ring-emerald-500"
-              : "text-dark bg-white placeholder-neutral-700 ring-neutral-600 focus:ring-emerald-600"
           }`}
         />
       </div>
 
       {/* Message de limite atteinte */}
       {selectedSymptoms.length >= 5 && (
-        <p
-          className={`mt-2 text-sm font-medium ${
-            isDarkMode ? "text-amber-400" : "text-amber-600"
-          }`}
-        >
+        <p className="mt-2 text-sm font-medium text-amber-600 dark:text-amber-400">
           Limite de 5 symptômes atteinte. Supprimez-en un pour continuer.
         </p>
       )}
@@ -225,11 +207,7 @@ export default function SymptomsSelector({
           ref={listRef}
           id="symptoms-listbox"
           role="listbox"
-          className={`absolute z-50 mt-2 max-h-80 w-full overflow-y-auto rounded-lg border shadow-lg transition duration-200 ease-in-out ${
-            isDarkMode
-              ? "bg-dark border-neutral-700"
-              : "border-neutral-200 bg-white"
-          }`}
+          className="dark:bg-dark absolute z-50 mt-2 max-h-80 w-full overflow-y-auto rounded-lg border border-neutral-200 bg-white shadow-lg transition duration-200 ease-in-out dark:border-neutral-700"
         >
           {filteredSymptoms.length > 0 ? (
             filteredSymptoms.map((symptom, index) => (
@@ -242,23 +220,15 @@ export default function SymptomsSelector({
                 onMouseEnter={() => setSelectedIndex(index)}
                 className={`cursor-pointer px-4 py-3 text-sm transition duration-150 ease-in-out lg:text-base 2xl:text-lg ${
                   selectedIndex === index
-                    ? isDarkMode
-                      ? "bg-emerald-600 text-white"
-                      : "bg-emerald-600 text-white"
-                    : isDarkMode
-                      ? "text-light hover:bg-neutral-800"
-                      : "text-dark hover:bg-neutral-100"
+                    ? "bg-emerald-600 text-white"
+                    : "text-dark dark:text-light hover:bg-neutral-100 dark:hover:bg-neutral-800"
                 }`}
               >
                 {capitalizeSymptom(symptom)}
               </li>
             ))
           ) : (
-            <li
-              className={`px-4 py-3 text-center text-sm italic lg:text-base 2xl:text-lg ${
-                isDarkMode ? "text-neutral-400" : "text-neutral-600"
-              }`}
-            >
+            <li className="px-4 py-3 text-center text-sm text-neutral-600 italic lg:text-base 2xl:text-lg dark:text-neutral-400">
               Aucun résultat trouvé
             </li>
           )}

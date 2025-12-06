@@ -4,12 +4,10 @@ import { Suspense, useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { GiSprout } from "react-icons/gi";
 import { IoMdArrowForward } from "react-icons/io";
-import { useTheme } from "../../context/ThemeContext";
 import LeafFall from "../LeafFall";
 import SymptomsSelector from "../input/SymptomsSelector";
 
 export default function Hero() {
-  const { isDarkMode } = useTheme();
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
 
   const handleSymptomSelect = (symptom) => {
@@ -56,17 +54,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className={`flex items-center gap-2 rounded-lg border-2 px-4 py-2 shadow-md transition duration-300 ease-in-out ${
-                isDarkMode
-                  ? "border-emerald-500/60 bg-emerald-950 text-emerald-500"
-                  : "border-dark/60 text-dark bg-white"
-              } `}
+              className="border-dark/60 text-dark flex items-center gap-2 rounded-lg border-2 bg-white px-4 py-2 shadow-md transition duration-300 ease-in-out dark:border-emerald-500/60 dark:bg-emerald-950 dark:text-emerald-500"
             >
-              <GiSprout
-                className={`text-lg transition duration-300 ease-in-out ${
-                  isDarkMode ? "text-emerald-500" : "text-emerald-600"
-                }`}
-              />
+              <GiSprout className="text-lg text-emerald-600 transition duration-300 ease-in-out dark:text-emerald-500" />
               <span className="font-sans text-sm font-semibold lg:text-base 2xl:text-lg">
                 Méthode Douce & Naturelle
               </span>
@@ -80,15 +70,11 @@ export default function Hero() {
             className="text-center"
           >
             <h1 className="text-4xl font-semibold lg:text-6xl 2xl:text-8xl">
-              <span
-                className={`${isDarkMode ? "text-light" : "text-dark"} transition duration-300 ease-in-out`}
-              >
+              <span className="text-dark dark:text-light transition duration-300 ease-in-out">
                 Soulagez vos symptômes
               </span>
               <br />
-              <span
-                className={`${isDarkMode ? "text-emerald-500" : "text-emerald-600"} transition duration-300 ease-in-out`}
-              >
+              <span className="text-emerald-600 transition duration-300 ease-in-out dark:text-emerald-500">
                 naturellement
               </span>
             </h1>
@@ -99,7 +85,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className={`${isDarkMode ? "text-neutral-400" : "text-neutral-600"} max-w-2xl text-center text-base transition duration-300 ease-in-out lg:text-lg 2xl:max-w-4xl 2xl:text-2xl`}
+            className="max-w-2xl text-center text-base text-neutral-600 transition duration-300 ease-in-out lg:text-lg 2xl:max-w-4xl 2xl:text-2xl dark:text-neutral-400"
           >
             Les bienfaits de la méthode douce pour traiter vos maux du
             quotidien.
@@ -130,7 +116,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             onClick={handleSearch}
-            className={`transition duration-300 ease-in-out lg:text-base 2xl:text-lg ${isDarkMode ? "bg-emerald-600 hover:bg-emerald-700" : "bg-emerald-600 hover:bg-emerald-600/90"} flex items-center gap-2 rounded-lg px-8 py-4 font-semibold text-white shadow-lg transition-colors`}
+            className="flex cursor-pointer items-center gap-2 rounded-lg bg-emerald-600 px-8 py-4 font-semibold text-white shadow-lg transition-colors duration-300 ease-in-out hover:bg-emerald-600/90 lg:text-base 2xl:text-lg dark:bg-emerald-700"
           >
             <span>Découvrir nos solutions</span>
             <IoMdArrowForward className="text-xl" />
@@ -157,12 +143,8 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
               className="flex items-center gap-2"
             >
-              <FaCheck
-                className={`${isDarkMode ? "text-emerald-500/80" : "text-emerald-600/80"} text-sm`}
-              />
-              <span
-                className={`text-sm font-semibold transition duration-300 ease-in-out lg:text-base 2xl:text-lg ${isDarkMode ? "text-neutral-400" : "text-neutral-600"} `}
-              >
+              <FaCheck className="text-sm text-emerald-600/80 dark:text-emerald-500/80" />
+              <span className="text-sm font-semibold text-neutral-600 transition duration-300 ease-in-out lg:text-base 2xl:text-lg dark:text-neutral-400">
                 {feature}
               </span>
             </motion.div>
