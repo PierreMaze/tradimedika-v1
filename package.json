@@ -1,7 +1,7 @@
 {
   "name": "tradimedika",
   "private": true,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "homepage": "http://pierremaze.github.io/tradimedika",
   "prettier": {
@@ -15,6 +15,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "fix": "prettier --write .",
+    "validate-data": "node scripts/validateData.js",
+    "normalize-data": "node scripts/normalizeData.js",
     "clean": "rm -rf node_modules pnpm-lock.yaml package-lock.json dist && clear",
     "deploy": "gh-pages -d dist"
   },

@@ -14,13 +14,3 @@ src/
 └── layout/             # Layout et navigation (Header, Footer)
     └── components/     # Composants spécifiques au layout (LogoTradimedika)
 ```
-
-### 🎯 Principes architecturaux
-
-- **Composants modulaires** et réutilisables organisés par fonction
-- **Séparation des responsabilités** claire entre UI, logique, et données
-- **Hooks personnalisés** pour la logique métier réutilisable
-- **Context API** pour la gestion d'état global (dark mode avec optimisation des re-renders)
-- **CSS-first theming** : Tailwind CSS v4 `dark:` variants pour les styles, Context pour la logique
-- **Performance optimisée** : memoization avec `useMemo` et `useCallback`, réduction des re-renders
-- **Données statiques** externalisées pour maintenabilité (symptoms, synonyms, remedies)
