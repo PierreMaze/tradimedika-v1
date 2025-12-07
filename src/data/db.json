@@ -3,8 +3,16 @@
     "id": 0,
     "name": "Citron",
     "type": "aliment",
-    "category": ["immunité", "digestif", "détox"],
-    "symptoms": ["digestion", "detox", "immunite"],
+    "category": [
+      "immunité",
+      "digestif",
+      "détox"
+    ],
+    "symptoms": [
+      "digestion",
+      "detox",
+      "immunite"
+    ],
     "uses": [
       {
         "form": "jus",
@@ -13,8 +21,15 @@
         "description": "Presser un demi-citron dans de l'eau tiède le matin."
       }
     ],
-    "contraindications": ["ulcères", "reflux"],
-    "properties": ["antioxydant", "digestif", "antimicrobien"],
+    "contraindications": [
+      "ulcères",
+      "reflux"
+    ],
+    "properties": [
+      "antioxydant",
+      "digestif",
+      "antimicrobien"
+    ],
     "description": "Fruit riche en vitamine C favorisant la digestion et l’immunité.",
     "image": "lemon"
   },
@@ -22,8 +37,16 @@
     "id": 1,
     "name": "Ail",
     "type": "aliment",
-    "category": ["antibactérien", "cardio", "immunité"],
-    "symptoms": ["infection", "immunite", "cholesterol"],
+    "category": [
+      "antibactérien",
+      "cardio",
+      "immunité"
+    ],
+    "symptoms": [
+      "infection",
+      "immunite",
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -32,8 +55,14 @@
         "description": "Consommer 1 gousse d’ail cru par jour."
       }
     ],
-    "contraindications": ["anticoagulants"],
-    "properties": ["antimicrobien", "fluidifiant", "anti-inflammatoire"],
+    "contraindications": [
+      "anticoagulants"
+    ],
+    "properties": [
+      "antimicrobien",
+      "fluidifiant",
+      "anti-inflammatoire"
+    ],
     "description": "Aliment puissant réputé pour soutenir l’immunité et la santé cardiovasculaire.",
     "image": "garlic"
   },
@@ -41,8 +70,16 @@
     "id": 2,
     "name": "Oignon",
     "type": "aliment",
-    "category": ["immunité", "digestif", "circulation"],
-    "symptoms": ["digestion", "infection", "circulation"],
+    "category": [
+      "immunité",
+      "digestif",
+      "circulation"
+    ],
+    "symptoms": [
+      "digestion",
+      "infection",
+      "circulation"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -52,7 +89,11 @@
       }
     ],
     "contraindications": [],
-    "properties": ["prébiotique", "antioxydant", "antimicrobien"],
+    "properties": [
+      "prébiotique",
+      "antioxydant",
+      "antimicrobien"
+    ],
     "description": "Légume riche en composés soufrés stimulant la flore intestinale.",
     "image": "onion"
   },
@@ -60,8 +101,16 @@
     "id": 3,
     "name": "Carotte",
     "type": "aliment",
-    "category": ["vision", "peau", "nutrition"],
-    "symptoms": ["peau", "vision", "immunite"],
+    "category": [
+      "vision",
+      "peau",
+      "nutrition"
+    ],
+    "symptoms": [
+      "peau",
+      "vision",
+      "immunite"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -71,7 +120,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["antioxydant", "beta-carotene"],
+    "properties": [
+      "antioxydant",
+      "beta-carotene"
+    ],
     "description": "Légume riche en provitamine A bénéfique pour la peau et la vue.",
     "image": "carrot"
   },
@@ -79,8 +131,16 @@
     "id": 4,
     "name": "Thym",
     "type": "herbe",
-    "category": ["respiration", "antiseptique", "digestif"],
-    "symptoms": ["toux", "rhume", "digestion"],
+    "category": [
+      "respiration",
+      "antiseptique",
+      "digestif"
+    ],
+    "symptoms": [
+      "toux",
+      "rhume",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -90,8 +150,13 @@
         "description": "Infuser 2g de thym sec pendant 10 minutes."
       }
     ],
-    "contraindications": ["grossesse"],
-    "properties": ["expectorant", "antiseptique"],
+    "contraindications": [
+      "grossesse"
+    ],
+    "properties": [
+      "expectorant",
+      "antiseptique"
+    ],
     "description": "Herbe reconnue pour soulager la toux et améliorer la digestion.",
     "image": "thyme"
   },
@@ -99,8 +164,16 @@
     "id": 5,
     "name": "Romarin",
     "type": "herbe",
-    "category": ["énergie", "digestif", "circulation"],
-    "symptoms": ["fatigue", "digestion", "foie"],
+    "category": [
+      "énergie",
+      "digestif",
+      "circulation"
+    ],
+    "symptoms": [
+      "fatigue",
+      "digestion",
+      "foie"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -110,8 +183,14 @@
         "description": "Infuser les feuilles dans de l’eau chaude."
       }
     ],
-    "contraindications": ["hypertension", "grossesse"],
-    "properties": ["stimulant", "cholérétique"],
+    "contraindications": [
+      "hypertension",
+      "grossesse"
+    ],
+    "properties": [
+      "stimulant",
+      "cholérétique"
+    ],
     "description": "Plante tonique favorisant le foie et la digestion.",
     "image": "rosemary"
   },
@@ -119,8 +198,14 @@
     "id": 6,
     "name": "Huile d’olive",
     "type": "huile",
-    "category": ["cardio", "antioxydant"],
-    "symptoms": ["inflammation", "cholesterol"],
+    "category": [
+      "cardio",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "inflammation",
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -130,7 +215,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["polyphenols", "lipides_sains"],
+    "properties": [
+      "polyphenols",
+      "lipides_sains"
+    ],
     "description": "Huile bénéfique pour le cœur et l’inflammation.",
     "image": "oliveoil"
   },
@@ -138,8 +226,13 @@
     "id": 7,
     "name": "Beurre",
     "type": "aliment",
-    "category": ["énergie", "peau"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "énergie",
+      "peau"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -148,8 +241,13 @@
         "description": "Consommer cru ou en cuisson douce."
       }
     ],
-    "contraindications": ["cholestérol"],
-    "properties": ["vitamineA", "lipides"],
+    "contraindications": [
+      "cholestérol"
+    ],
+    "properties": [
+      "vitamineA",
+      "lipides"
+    ],
     "description": "Produit laitier riche en vitamines liposolubles.",
     "image": "butter"
   },
@@ -157,8 +255,14 @@
     "id": 8,
     "name": "Lait",
     "type": "aliment",
-    "category": ["os", "nutrition"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "os",
+      "nutrition"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "boisson",
@@ -167,8 +271,13 @@
         "description": "Consommer nature ou avec repas."
       }
     ],
-    "contraindications": ["intolérance_lactose"],
-    "properties": ["calcium", "proteines"],
+    "contraindications": [
+      "intolérance_lactose"
+    ],
+    "properties": [
+      "calcium",
+      "proteines"
+    ],
     "description": "Source de protéines et de calcium.",
     "image": "milk"
   },
@@ -176,8 +285,15 @@
     "id": 9,
     "name": "Vinaigre de cidre",
     "type": "vinaigre",
-    "category": ["glycémie", "détox", "digestif"],
-    "symptoms": ["digestion", "diabete"],
+    "category": [
+      "glycémie",
+      "détox",
+      "digestif"
+    ],
+    "symptoms": [
+      "digestion",
+      "diabete"
+    ],
     "uses": [
       {
         "form": "dilué",
@@ -186,8 +302,13 @@
         "description": "Diluer 1 cuillère dans un verre d’eau."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["acidifiant", "microbiote"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "acidifiant",
+      "microbiote"
+    ],
     "description": "Vinaigre stimulant la digestion et l’équilibre glycémique.",
     "image": "applevinegar"
   },
@@ -195,8 +316,15 @@
     "id": 10,
     "name": "Mélisse",
     "type": "plante",
-    "category": ["calmante", "digestif"],
-    "symptoms": ["stress", "insomnie", "digestion"],
+    "category": [
+      "calmante",
+      "digestif"
+    ],
+    "symptoms": [
+      "stress",
+      "insomnie",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -207,7 +335,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["calmante", "antispasmodique"],
+    "properties": [
+      "calmante",
+      "antispasmodique"
+    ],
     "description": "Plante relaxante utilisée pour le stress et la digestion.",
     "image": "lemonbalm"
   },
@@ -215,8 +346,14 @@
     "id": 11,
     "name": "Vinaigre balsamique",
     "type": "vinaigre",
-    "category": ["digestif", "antioxydant"],
-    "symptoms": ["digestion", "cholesterol"],
+    "category": [
+      "digestif",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "digestion",
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -225,8 +362,14 @@
         "description": "Ajouter sur légumes, salades ou viandes."
       }
     ],
-    "contraindications": ["reflux", "ulcères"],
-    "properties": ["antioxydant", "digestif"],
+    "contraindications": [
+      "reflux",
+      "ulcères"
+    ],
+    "properties": [
+      "antioxydant",
+      "digestif"
+    ],
     "description": "Vinaigre sucré issu du raisin stimulant la digestion et la santé cardiovasculaire.",
     "image": "balsamicvinegar"
   },
@@ -234,8 +377,13 @@
     "id": 12,
     "name": "Vinaigre de vin",
     "type": "vinaigre",
-    "category": ["digestif", "détox"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif",
+      "détox"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -244,8 +392,13 @@
         "description": "Utiliser sur crudités et salades."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["acide organique", "antimicrobien"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "acide organique",
+      "antimicrobien"
+    ],
     "description": "Vinaigre traditionnel facilitant la digestion et la flore intestinale.",
     "image": "winevinegar"
   },
@@ -253,8 +406,14 @@
     "id": 13,
     "name": "Vinaigre rouge",
     "type": "vinaigre",
-    "category": ["cardio", "antioxydant"],
-    "symptoms": ["circulation", "digestion"],
+    "category": [
+      "cardio",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "circulation",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -263,8 +422,13 @@
         "description": "Utiliser dans des marinades ou salades."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["polyphenols", "digestif"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "polyphenols",
+      "digestif"
+    ],
     "description": "Vinaigre issu du vin rouge, riche en polyphénols protecteurs.",
     "image": "redvinegar"
   },
@@ -272,8 +436,16 @@
     "id": 14,
     "name": "Miel",
     "type": "aliment",
-    "category": ["antibactérien", "digestion", "anti-inflammatoire"],
-    "symptoms": ["toux", "infection", "gorge"],
+    "category": [
+      "antibactérien",
+      "digestion",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "toux",
+      "infection",
+      "gorge"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -282,8 +454,15 @@
         "description": "Consommer pur ou dilué dans une boisson tiède."
       }
     ],
-    "contraindications": ["diabète", "enfants_bebe"],
-    "properties": ["antimicrobien", "cicatrisation", "prébiotique"],
+    "contraindications": [
+      "diabète",
+      "enfants_bebe"
+    ],
+    "properties": [
+      "antimicrobien",
+      "cicatrisation",
+      "prébiotique"
+    ],
     "description": "Substance naturelle nourricière, apaisante pour la gorge et antibactérienne.",
     "image": "honey"
   },
@@ -291,8 +470,15 @@
     "id": 15,
     "name": "Persil",
     "type": "herbe",
-    "category": ["détox", "circulation", "nutrition"],
-    "symptoms": ["retention eau", "digestion"],
+    "category": [
+      "détox",
+      "circulation",
+      "nutrition"
+    ],
+    "symptoms": [
+      "retention eau",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "feuilles",
@@ -302,7 +488,11 @@
       }
     ],
     "contraindications": [],
-    "properties": ["diurétique", "vitamineC", "antioxydant"],
+    "properties": [
+      "diurétique",
+      "vitamineC",
+      "antioxydant"
+    ],
     "description": "Herbe riche en micronutriments soutenant reins et digestion.",
     "image": "parsley"
   },
@@ -310,8 +500,16 @@
     "id": 16,
     "name": "Gingembre",
     "type": "épice",
-    "category": ["anti-nausée", "digestif", "énergie"],
-    "symptoms": ["nausee", "fatigue", "digestion"],
+    "category": [
+      "anti-nausée",
+      "digestif",
+      "énergie"
+    ],
+    "symptoms": [
+      "nausee",
+      "fatigue",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -321,8 +519,15 @@
         "description": "Infuser racine fraîche ou séchée dans l'eau chaude."
       }
     ],
-    "contraindications": ["calculs_biliaires", "grossesse_excessive"],
-    "properties": ["stimulant", "anti-inflammatoire", "antioxydant"],
+    "contraindications": [
+      "calculs_biliaires",
+      "grossesse_excessive"
+    ],
+    "properties": [
+      "stimulant",
+      "anti-inflammatoire",
+      "antioxydant"
+    ],
     "description": "Racine tonique puissante contre les nausées et la fatigue.",
     "image": "ginger"
   },
@@ -330,8 +535,13 @@
     "id": 17,
     "name": "Poivre noir",
     "type": "épice",
-    "category": ["digestif", "anti-inflammatoire"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -340,8 +550,14 @@
         "description": "Assaisonner les plats en petites quantités."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["piperine", "antioxydant", "thermogenese"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "piperine",
+      "antioxydant",
+      "thermogenese"
+    ],
     "description": "Épice stimulant la digestion et l’absorption nutritionnelle.",
     "image": "blackpepper"
   },
@@ -349,8 +565,13 @@
     "id": 18,
     "name": "Sel marin",
     "type": "aliment",
-    "category": ["minéraux", "circulation"],
-    "symptoms": ["deshydratation"],
+    "category": [
+      "minéraux",
+      "circulation"
+    ],
+    "symptoms": [
+      "deshydratation"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -359,8 +580,13 @@
         "description": "Utiliser avec modération sur les plats."
       }
     ],
-    "contraindications": ["hypertension"],
-    "properties": ["électrolytes", "minéralisation"],
+    "contraindications": [
+      "hypertension"
+    ],
+    "properties": [
+      "électrolytes",
+      "minéralisation"
+    ],
     "description": "Sel naturel contenant des oligo-éléments essentiels.",
     "image": "seasalt"
   },
@@ -368,8 +594,13 @@
     "id": 19,
     "name": "Crème",
     "type": "aliment",
-    "category": ["nutrition", "énergie"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "nutrition",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -378,8 +609,14 @@
         "description": "Utiliser pour sauces, pâtisseries ou plats."
       }
     ],
-    "contraindications": ["cholestérol", "intolérance_lactose"],
-    "properties": ["lipides", "vitamineA"],
+    "contraindications": [
+      "cholestérol",
+      "intolérance_lactose"
+    ],
+    "properties": [
+      "lipides",
+      "vitamineA"
+    ],
     "description": "Produit laitier riche favorisant l'apport énergétique.",
     "image": "cream"
   },
@@ -387,8 +624,14 @@
     "id": 20,
     "name": "Ail des ours",
     "type": "herbe",
-    "category": ["immunité", "digestif"],
-    "symptoms": ["infection", "digestion"],
+    "category": [
+      "immunité",
+      "digestif"
+    ],
+    "symptoms": [
+      "infection",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "feuilles",
@@ -397,8 +640,13 @@
         "description": "Consommer cru dans salades, pestos ou sauces."
       }
     ],
-    "contraindications": ["anticoagulants"],
-    "properties": ["antimicrobien", "digestif"],
+    "contraindications": [
+      "anticoagulants"
+    ],
+    "properties": [
+      "antimicrobien",
+      "digestif"
+    ],
     "description": "Plante sauvage riche en composés soufrés, bénéfique pour le tube digestif.",
     "image": "wildgarlic"
   },
@@ -406,8 +654,15 @@
     "id": 21,
     "name": "Romarin frais",
     "type": "herbe",
-    "category": ["circulation", "digestif", "énergie"],
-    "symptoms": ["fatigue", "digestion"],
+    "category": [
+      "circulation",
+      "digestif",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -417,8 +672,14 @@
         "description": "Infuser dans de l'eau chaude."
       }
     ],
-    "contraindications": ["grossesse", "hypertension"],
-    "properties": ["stimulant", "cholérétique"],
+    "contraindications": [
+      "grossesse",
+      "hypertension"
+    ],
+    "properties": [
+      "stimulant",
+      "cholérétique"
+    ],
     "description": "Herbe aromatique tonique digestive et hépatique.",
     "image": "freshrosemary"
   },
@@ -426,8 +687,14 @@
     "id": 22,
     "name": "Laurier",
     "type": "herbe",
-    "category": ["digestif", "respiration"],
-    "symptoms": ["digestion", "rhume"],
+    "category": [
+      "digestif",
+      "respiration"
+    ],
+    "symptoms": [
+      "digestion",
+      "rhume"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -438,7 +705,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["antimicrobien", "digestif"],
+    "properties": [
+      "antimicrobien",
+      "digestif"
+    ],
     "description": "Feuille aromatique calmant les spasmes digestifs et soutenant la respiration.",
     "image": "bayleaf"
   },
@@ -446,8 +716,14 @@
     "id": 23,
     "name": "Basilic",
     "type": "herbe",
-    "category": ["calmante", "digestif"],
-    "symptoms": ["digestion", "stress"],
+    "category": [
+      "calmante",
+      "digestif"
+    ],
+    "symptoms": [
+      "digestion",
+      "stress"
+    ],
     "uses": [
       {
         "form": "feuilles",
@@ -457,7 +733,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["relaxant", "antispasmodique"],
+    "properties": [
+      "relaxant",
+      "antispasmodique"
+    ],
     "description": "Herbe aromatique apaisante aidant la digestion et l’anxiété.",
     "image": "basil"
   },
@@ -465,8 +744,14 @@
     "id": 24,
     "name": "Menthe",
     "type": "herbe",
-    "category": ["digestif", "rafraîchissant"],
-    "symptoms": ["digestion", "nausee"],
+    "category": [
+      "digestif",
+      "rafraîchissant"
+    ],
+    "symptoms": [
+      "digestion",
+      "nausee"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -476,8 +761,13 @@
         "description": "Infuser feuilles fraîches ou séchées."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["antispasmodique", "digestif"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "antispasmodique",
+      "digestif"
+    ],
     "description": "Herbe rafraîchissante soulageant nausées et ballonnements.",
     "image": "mint"
   },
@@ -485,8 +775,13 @@
     "id": 25,
     "name": "Vinaigre de xérès",
     "type": "vinaigre",
-    "category": ["digestif", "cardio"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif",
+      "cardio"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -495,8 +790,13 @@
         "description": "Utiliser pour sauces, poissons et légumes."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["polyphenols", "digestif"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "polyphenols",
+      "digestif"
+    ],
     "description": "Vinaigre complexe issu du vin de xérès, apprécié pour la digestion.",
     "image": "sherryvinegar"
   },
@@ -504,8 +804,13 @@
     "id": 26,
     "name": "Vinaigre balsamique blanc",
     "type": "vinaigre",
-    "category": ["digestif", "antioxydant"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -514,8 +819,13 @@
         "description": "Ajouter sur salades, crudités et légumes crus."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["acide organique", "digestif"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "acide organique",
+      "digestif"
+    ],
     "description": "Vinaigre doux et fruité, plus léger que le balsamique classique.",
     "image": "whitebalsamicvinegar"
   },
@@ -523,8 +833,14 @@
     "id": 27,
     "name": "Vinaigre de riz",
     "type": "vinaigre",
-    "category": ["digestion", "détox"],
-    "symptoms": ["digestion", "glycemie"],
+    "category": [
+      "digestion",
+      "détox"
+    ],
+    "symptoms": [
+      "digestion",
+      "glycemie"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -533,8 +849,13 @@
         "description": "Utiliser pour riz, sushis ou salades."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["acide doux", "équilibre intestinal"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "acide doux",
+      "équilibre intestinal"
+    ],
     "description": "Vinaigre asiatique léger aidant à la digestion et la glycémie.",
     "image": "ricevinegar"
   },
@@ -542,8 +863,12 @@
     "id": 28,
     "name": "Poivre blanc",
     "type": "épice",
-    "category": ["digestif"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -552,8 +877,13 @@
         "description": "Assaisonner soupes, sauces et plats délicats."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["piperine", "anti-inflammatoire"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "piperine",
+      "anti-inflammatoire"
+    ],
     "description": "Variété douce de poivre facilitant la digestion.",
     "image": "whitepepper"
   },
@@ -561,8 +891,13 @@
     "id": 29,
     "name": "Poivre rose",
     "type": "épice",
-    "category": ["digestif", "antioxydant"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestif",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -571,8 +906,13 @@
         "description": "Parsemer sur plats froids ou fromages."
       }
     ],
-    "contraindications": ["allergies"],
-    "properties": ["antioxydant", "digestif"],
+    "contraindications": [
+      "allergies"
+    ],
+    "properties": [
+      "antioxydant",
+      "digestif"
+    ],
     "description": "Baie aromatique douce améliorant la digestion et la circulation.",
     "image": "pinkpepper"
   },
@@ -580,8 +920,15 @@
     "id": 30,
     "name": "Curcuma",
     "type": "épice",
-    "category": ["anti-inflammatoire", "antioxydant"],
-    "symptoms": ["douleurs", "digestion", "inflammation"],
+    "category": [
+      "anti-inflammatoire",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "douleurs",
+      "digestion",
+      "inflammation"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -590,8 +937,13 @@
         "description": "Mélanger dans un lait chaud ou sur les plats."
       }
     ],
-    "contraindications": ["calculs_biliaires"],
-    "properties": ["curcumine", "anti-inflammatoire"],
+    "contraindications": [
+      "calculs_biliaires"
+    ],
+    "properties": [
+      "curcumine",
+      "anti-inflammatoire"
+    ],
     "description": "Épice dorée fortement anti-inflammatoire.",
     "image": "turmeric"
   },
@@ -599,8 +951,13 @@
     "id": 31,
     "name": "Cumin",
     "type": "épice",
-    "category": ["digestif"],
-    "symptoms": ["ballonnements", "digestion"],
+    "category": [
+      "digestif"
+    ],
+    "symptoms": [
+      "ballonnements",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -610,7 +967,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["carminatif", "antioxydant"],
+    "properties": [
+      "carminatif",
+      "antioxydant"
+    ],
     "description": "Épice chaude réduisant ballonnements et spasmes.",
     "image": "cumin"
   },
@@ -618,8 +978,13 @@
     "id": 32,
     "name": "Paprika",
     "type": "épice",
-    "category": ["antioxydant", "circulation"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "antioxydant",
+      "circulation"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -628,8 +993,13 @@
         "description": "Parsemer sur grillades ou légumes."
       }
     ],
-    "contraindications": ["ulcères"],
-    "properties": ["capsaïcine", "vitamineC"],
+    "contraindications": [
+      "ulcères"
+    ],
+    "properties": [
+      "capsaïcine",
+      "vitamineC"
+    ],
     "description": "Épice douce riche en vitamine C, stimulant léger.",
     "image": "paprika"
   },
@@ -637,8 +1007,14 @@
     "id": 33,
     "name": "Chili",
     "type": "épice",
-    "category": ["circulation", "métabolisme"],
-    "symptoms": ["digestion", "fatigue"],
+    "category": [
+      "circulation",
+      "métabolisme"
+    ],
+    "symptoms": [
+      "digestion",
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "épice",
@@ -647,8 +1023,14 @@
         "description": "Ajouter par petites quantités."
       }
     ],
-    "contraindications": ["ulcères", "reflux"],
-    "properties": ["capsaïcine", "thermogenese"],
+    "contraindications": [
+      "ulcères",
+      "reflux"
+    ],
+    "properties": [
+      "capsaïcine",
+      "thermogenese"
+    ],
     "description": "Épice piquante stimulant le métabolisme et la circulation.",
     "image": "chili"
   },
@@ -656,8 +1038,14 @@
     "id": 34,
     "name": "Cannelle",
     "type": "épice",
-    "category": ["glycémie", "antioxydant"],
-    "symptoms": ["diabete", "digestion"],
+    "category": [
+      "glycémie",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "diabete",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -666,8 +1054,13 @@
         "description": "Ajouter dans boissons ou desserts."
       }
     ],
-    "contraindications": ["grossesse_excessive"],
-    "properties": ["antioxydant", "hypoglycémiante"],
+    "contraindications": [
+      "grossesse_excessive"
+    ],
+    "properties": [
+      "antioxydant",
+      "hypoglycémiante"
+    ],
     "description": "Épice sucrée régulant la glycémie et la digestion.",
     "image": "cinnamon"
   },
@@ -675,8 +1068,14 @@
     "id": 35,
     "name": "Noix de muscade",
     "type": "épice",
-    "category": ["digestif", "sommeil"],
-    "symptoms": ["insomnie", "digestion"],
+    "category": [
+      "digestif",
+      "sommeil"
+    ],
+    "symptoms": [
+      "insomnie",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "râpée",
@@ -685,8 +1084,13 @@
         "description": "Saupoudrer dans lait chaud ou plats."
       }
     ],
-    "contraindications": ["forte_dose"],
-    "properties": ["sédative_légère", "antispasmodique"],
+    "contraindications": [
+      "forte_dose"
+    ],
+    "properties": [
+      "sédative_légère",
+      "antispasmodique"
+    ],
     "description": "Épice chaude calmante à utiliser en petite quantité.",
     "image": "nutmeg"
   },
@@ -694,8 +1098,14 @@
     "id": 36,
     "name": "Coriandre",
     "type": "herbe",
-    "category": ["digestif", "détox"],
-    "symptoms": ["digestion", "retention eau"],
+    "category": [
+      "digestif",
+      "détox"
+    ],
+    "symptoms": [
+      "digestion",
+      "retention eau"
+    ],
     "uses": [
       {
         "form": "feuilles",
@@ -705,7 +1115,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["carminatif", "détox"],
+    "properties": [
+      "carminatif",
+      "détox"
+    ],
     "description": "Herbe verte apaisant les gaz et stimulant reins et foie.",
     "image": "cilantro"
   },
@@ -713,8 +1126,13 @@
     "id": 37,
     "name": "Curcuma frais",
     "type": "épice",
-    "category": ["anti-inflammatoire"],
-    "symptoms": ["douleurs", "digestion"],
+    "category": [
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "douleurs",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "racine",
@@ -723,8 +1141,13 @@
         "description": "Râper ou mixer dans plats et boissons."
       }
     ],
-    "contraindications": ["calculs_biliaires"],
-    "properties": ["curcumine", "antioxydant"],
+    "contraindications": [
+      "calculs_biliaires"
+    ],
+    "properties": [
+      "curcumine",
+      "antioxydant"
+    ],
     "description": "Racine puissante anti-inflammatoire en version brute.",
     "image": "freshturmeric"
   },
@@ -732,8 +1155,14 @@
     "id": 38,
     "name": "Citron vert",
     "type": "aliment",
-    "category": ["immunité", "digestif"],
-    "symptoms": ["digestion", "detox"],
+    "category": [
+      "immunité",
+      "digestif"
+    ],
+    "symptoms": [
+      "digestion",
+      "detox"
+    ],
     "uses": [
       {
         "form": "jus",
@@ -742,8 +1171,13 @@
         "description": "Presser dans de l'eau tiède ou plats."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["vitamineC", "antimicrobien"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "vitamineC",
+      "antimicrobien"
+    ],
     "description": "Agrume acide stimulant digestion et immunité.",
     "image": "lime"
   },
@@ -751,8 +1185,14 @@
     "id": 39,
     "name": "Citronnelle",
     "type": "herbe",
-    "category": ["calmante", "digestif"],
-    "symptoms": ["stress", "nausee"],
+    "category": [
+      "calmante",
+      "digestif"
+    ],
+    "symptoms": [
+      "stress",
+      "nausee"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -762,8 +1202,13 @@
         "description": "Infuser tiges fraîches en morceaux."
       }
     ],
-    "contraindications": ["grossesse"],
-    "properties": ["antispasmodique", "calmante"],
+    "contraindications": [
+      "grossesse"
+    ],
+    "properties": [
+      "antispasmodique",
+      "calmante"
+    ],
     "description": "Plante tropicale apaisant la digestion et les tensions.",
     "image": "lemongrass"
   },
@@ -771,8 +1216,15 @@
     "id": 40,
     "name": "Amandes",
     "type": "aliment",
-    "category": ["énergie", "cardio", "nutrition"],
-    "symptoms": ["fatigue", "cholesterol"],
+    "category": [
+      "énergie",
+      "cardio",
+      "nutrition"
+    ],
+    "symptoms": [
+      "fatigue",
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -781,8 +1233,13 @@
         "description": "Consommer à jeun ou encas."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["oméga9", "magnésium"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "oméga9",
+      "magnésium"
+    ],
     "description": "Fruit sec riche en bons lipides et nutriments.",
     "image": "almonds"
   },
@@ -790,8 +1247,15 @@
     "id": 41,
     "name": "Noisettes",
     "type": "aliment",
-    "category": ["énergie", "cardio", "antioxydant"],
-    "symptoms": ["fatigue", "cholesterol"],
+    "category": [
+      "énergie",
+      "cardio",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "fatigue",
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -800,8 +1264,13 @@
         "description": "Consommer en encas ou ajout dans plats."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["vitamineE", "lipides_sains"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "vitamineE",
+      "lipides_sains"
+    ],
     "description": "Fruit sec riche en vitamine E et lipides cardiosains.",
     "image": "hazelnuts"
   },
@@ -809,8 +1278,15 @@
     "id": 42,
     "name": "Noix",
     "type": "aliment",
-    "category": ["cardio", "cerveau", "antioxydant"],
-    "symptoms": ["cholesterol", "cognition"],
+    "category": [
+      "cardio",
+      "cerveau",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "cholesterol",
+      "cognition"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -819,8 +1295,13 @@
         "description": "Consommer 3 à 5 noix par jour."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["omega3", "polyphenols"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "omega3",
+      "polyphenols"
+    ],
     "description": "Fruit sec très riche en oméga-3 et antioxydants.",
     "image": "walnuts"
   },
@@ -828,8 +1309,15 @@
     "id": 43,
     "name": "Graines de chia",
     "type": "aliment",
-    "category": ["détox", "énergie", "digestion"],
-    "symptoms": ["digestion", "fatigue"],
+    "category": [
+      "détox",
+      "énergie",
+      "digestion"
+    ],
+    "symptoms": [
+      "digestion",
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "trempé",
@@ -838,8 +1326,14 @@
         "description": "Tremper dans liquide pendant 20 minutes."
       }
     ],
-    "contraindications": ["occlusion", "crises_diverticulites"],
-    "properties": ["fibres", "omega3"],
+    "contraindications": [
+      "occlusion",
+      "crises_diverticulites"
+    ],
+    "properties": [
+      "fibres",
+      "omega3"
+    ],
     "description": "Graines riches en fibres, hydratantes et énergétiques.",
     "image": "chia"
   },
@@ -847,8 +1341,14 @@
     "id": 44,
     "name": "Graines de lin",
     "type": "aliment",
-    "category": ["digestif", "anti-inflammatoire"],
-    "symptoms": ["constipation", "digestion"],
+    "category": [
+      "digestif",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "constipation",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "moulu",
@@ -857,8 +1357,13 @@
         "description": "Ajouter à yaourts, compotes ou salades."
       }
     ],
-    "contraindications": ["occlusion"],
-    "properties": ["fibres", "omega3"],
+    "contraindications": [
+      "occlusion"
+    ],
+    "properties": [
+      "fibres",
+      "omega3"
+    ],
     "description": "Graines mucilagineuses aidant le transit et l’inflammation.",
     "image": "flaxseed"
   },
@@ -866,8 +1371,14 @@
     "id": 45,
     "name": "Graines de sésame",
     "type": "aliment",
-    "category": ["os", "énergie"],
-    "symptoms": ["fatigue", "demineralisation"],
+    "category": [
+      "os",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "demineralisation"
+    ],
     "uses": [
       {
         "form": "graines",
@@ -876,8 +1387,13 @@
         "description": "Parsemer sur plats ou tahini."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["calcium", "vitamineB"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "calcium",
+      "vitamineB"
+    ],
     "description": "Graines minérales soutenant os et énergie.",
     "image": "sesame"
   },
@@ -885,8 +1401,14 @@
     "id": 46,
     "name": "Graines de tournesol",
     "type": "aliment",
-    "category": ["énergie", "peau"],
-    "symptoms": ["fatigue", "peau"],
+    "category": [
+      "énergie",
+      "peau"
+    ],
+    "symptoms": [
+      "fatigue",
+      "peau"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -895,8 +1417,13 @@
         "description": "Ajouter à salades, granola ou à sec."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["vitamineE", "magnésium"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "vitamineE",
+      "magnésium"
+    ],
     "description": "Graines riches en vitamine E et nutriments.",
     "image": "sunflowerseeds"
   },
@@ -904,8 +1431,15 @@
     "id": 47,
     "name": "Avoine",
     "type": "aliment",
-    "category": ["glycémie", "digestion", "énergie"],
-    "symptoms": ["cholesterol", "digestion"],
+    "category": [
+      "glycémie",
+      "digestion",
+      "énergie"
+    ],
+    "symptoms": [
+      "cholesterol",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "flocons",
@@ -914,8 +1448,13 @@
         "description": "Consommer en porridge ou muesli."
       }
     ],
-    "contraindications": ["intolérance_gluten"],
-    "properties": ["bêta_glucane", "fibres"],
+    "contraindications": [
+      "intolérance_gluten"
+    ],
+    "properties": [
+      "bêta_glucane",
+      "fibres"
+    ],
     "description": "Céréale douce équilibrant la glycémie et le transit.",
     "image": "oats"
   },
@@ -923,8 +1462,14 @@
     "id": 48,
     "name": "Quinoa",
     "type": "aliment",
-    "category": ["protéines", "digestion"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "digestion"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "bouilli",
@@ -934,7 +1479,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["acides_aminés", "fibres"],
+    "properties": [
+      "acides_aminés",
+      "fibres"
+    ],
     "description": "Pseudocéréale protéinée digestive.",
     "image": "quinoa"
   },
@@ -942,8 +1490,14 @@
     "id": 49,
     "name": "Riz complet",
     "type": "aliment",
-    "category": ["digestion", "glycémie"],
-    "symptoms": ["constipation", "fatigue"],
+    "category": [
+      "digestion",
+      "glycémie"
+    ],
+    "symptoms": [
+      "constipation",
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -953,7 +1507,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "magnésium"],
+    "properties": [
+      "fibres",
+      "magnésium"
+    ],
     "description": "Céréale complète riche en minéraux et fibres.",
     "image": "brownrice"
   },
@@ -961,8 +1518,13 @@
     "id": 50,
     "name": "Riz basmati",
     "type": "aliment",
-    "category": ["digestion", "glycémie"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestion",
+      "glycémie"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -972,7 +1534,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["index_bas", "énergétique"],
+    "properties": [
+      "index_bas",
+      "énergétique"
+    ],
     "description": "Variété de riz à IG modéré favorisant digestion stable.",
     "image": "basmatirice"
   },
@@ -980,8 +1545,15 @@
     "id": 51,
     "name": "Lentilles",
     "type": "aliment",
-    "category": ["protéines", "digestion", "énergie"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "digestion",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -990,8 +1562,13 @@
         "description": "Cuire lentilles 20-30 min."
       }
     ],
-    "contraindications": ["ballonnements"],
-    "properties": ["fer", "fibres"],
+    "contraindications": [
+      "ballonnements"
+    ],
+    "properties": [
+      "fer",
+      "fibres"
+    ],
     "description": "Légumineuse riche en fibres et minéraux.",
     "image": "lentils"
   },
@@ -999,8 +1576,14 @@
     "id": 52,
     "name": "Pois chiches",
     "type": "aliment",
-    "category": ["protéines", "digestion"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "digestion"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1009,8 +1592,13 @@
         "description": "Tremper 8h puis cuire 1h."
       }
     ],
-    "contraindications": ["ballonnements"],
-    "properties": ["fibres", "fer"],
+    "contraindications": [
+      "ballonnements"
+    ],
+    "properties": [
+      "fibres",
+      "fer"
+    ],
     "description": "Légumineuse nutritive soutenant énergie et microbiote.",
     "image": "chickpeas"
   },
@@ -1018,8 +1606,14 @@
     "id": 53,
     "name": "Haricots rouges",
     "type": "aliment",
-    "category": ["protéines", "digestion"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "digestion"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1028,8 +1622,13 @@
         "description": "Tremper 8-12h puis cuire 1h30."
       }
     ],
-    "contraindications": ["ballonnements"],
-    "properties": ["fer", "fibres"],
+    "contraindications": [
+      "ballonnements"
+    ],
+    "properties": [
+      "fer",
+      "fibres"
+    ],
     "description": "Source de fer et fibres, régule énergie et microbiote.",
     "image": "redbeans"
   },
@@ -1037,8 +1636,14 @@
     "id": 54,
     "name": "Oeufs",
     "type": "aliment",
-    "category": ["protéines", "énergie"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1047,8 +1652,13 @@
         "description": "Cuire selon préférence."
       }
     ],
-    "contraindications": ["cholestérol"],
-    "properties": ["acides_aminés", "b12"],
+    "contraindications": [
+      "cholestérol"
+    ],
+    "properties": [
+      "acides_aminés",
+      "b12"
+    ],
     "description": "Aliment complet riche en protéines et vitamines.",
     "image": "eggs"
   },
@@ -1056,8 +1666,14 @@
     "id": 55,
     "name": "Poulet",
     "type": "aliment",
-    "category": ["protéines", "énergie"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1067,7 +1683,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["protéines", "b6"],
+    "properties": [
+      "protéines",
+      "b6"
+    ],
     "description": "Viande blanche maigre idéale pour récupération et énergie.",
     "image": "chicken"
   },
@@ -1075,8 +1694,16 @@
     "id": 56,
     "name": "Saumon",
     "type": "aliment",
-    "category": ["cardio", "cerveau", "anti-inflammatoire"],
-    "symptoms": ["cholesterol", "inflammation", "cognition"],
+    "category": [
+      "cardio",
+      "cerveau",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "cholesterol",
+      "inflammation",
+      "cognition"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1086,7 +1713,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["omega3", "vitamineD"],
+    "properties": [
+      "omega3",
+      "vitamineD"
+    ],
     "description": "Poisson gras riche en oméga-3 et vitamine D.",
     "image": "salmon"
   },
@@ -1094,8 +1724,14 @@
     "id": 57,
     "name": "Sardines",
     "type": "aliment",
-    "category": ["os", "cardio"],
-    "symptoms": ["cholesterol", "demineralisation"],
+    "category": [
+      "os",
+      "cardio"
+    ],
+    "symptoms": [
+      "cholesterol",
+      "demineralisation"
+    ],
     "uses": [
       {
         "form": "conserve",
@@ -1105,7 +1741,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["calcium", "omega3"],
+    "properties": [
+      "calcium",
+      "omega3"
+    ],
     "description": "Poisson riche en calcium et oméga-3.",
     "image": "sardines"
   },
@@ -1113,8 +1752,14 @@
     "id": 58,
     "name": "Thon",
     "type": "aliment",
-    "category": ["protéines", "énergie"],
-    "symptoms": ["fatigue", "nutrition"],
+    "category": [
+      "protéines",
+      "énergie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "grillade",
@@ -1123,8 +1768,13 @@
         "description": "Cuire rapidement, éviter sur-cuisson."
       }
     ],
-    "contraindications": ["mercure"],
-    "properties": ["protéines", "b12"],
+    "contraindications": [
+      "mercure"
+    ],
+    "properties": [
+      "protéines",
+      "b12"
+    ],
     "description": "Poisson riche en protéines et vitamine B12.",
     "image": "tuna"
   },
@@ -1132,8 +1782,13 @@
     "id": 59,
     "name": "Fromage blanc",
     "type": "aliment",
-    "category": ["protéines", "digestion"],
-    "symptoms": ["nutrition"],
+    "category": [
+      "protéines",
+      "digestion"
+    ],
+    "symptoms": [
+      "nutrition"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -1142,8 +1797,13 @@
         "description": "Consommer nature ou accompagné."
       }
     ],
-    "contraindications": ["intolérance_lactose"],
-    "properties": ["protéines", "calcium"],
+    "contraindications": [
+      "intolérance_lactose"
+    ],
+    "properties": [
+      "protéines",
+      "calcium"
+    ],
     "description": "Produit laitier léger et riche en protéines.",
     "image": "cottagecheese"
   },
@@ -1151,8 +1811,13 @@
     "id": 60,
     "name": "Yaourt grec",
     "type": "aliment",
-    "category": ["digestion", "immunité"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestion",
+      "immunité"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "consommation",
@@ -1161,8 +1826,13 @@
         "description": "Consommer nature ou avec fruits."
       }
     ],
-    "contraindications": ["intolérance_lactose"],
-    "properties": ["probiotiques", "protéines"],
+    "contraindications": [
+      "intolérance_lactose"
+    ],
+    "properties": [
+      "probiotiques",
+      "protéines"
+    ],
     "description": "Yaourt riche en probiotiques améliorant digestion et microbiote.",
     "image": "greekyogurt"
   },
@@ -1170,8 +1840,15 @@
     "id": 61,
     "name": "Banane",
     "type": "aliment",
-    "category": ["énergie", "digestion", "sport"],
-    "symptoms": ["fatigue", "crampes"],
+    "category": [
+      "énergie",
+      "digestion",
+      "sport"
+    ],
+    "symptoms": [
+      "fatigue",
+      "crampes"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1180,8 +1857,13 @@
         "description": "Consommer à jeun ou en collation."
       }
     ],
-    "contraindications": ["diabète"],
-    "properties": ["potassium", "fibres"],
+    "contraindications": [
+      "diabète"
+    ],
+    "properties": [
+      "potassium",
+      "fibres"
+    ],
     "description": "Fruit énergétique riche en potassium favorable aux muscles.",
     "image": "banana"
   },
@@ -1189,8 +1871,14 @@
     "id": 62,
     "name": "Pomme",
     "type": "aliment",
-    "category": ["digestion", "immunité"],
-    "symptoms": ["digestion", "detox"],
+    "category": [
+      "digestion",
+      "immunité"
+    ],
+    "symptoms": [
+      "digestion",
+      "detox"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1200,7 +1888,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["pectine", "antioxydant"],
+    "properties": [
+      "pectine",
+      "antioxydant"
+    ],
     "description": "Fruit doux stabilisant digestion et glycémie.",
     "image": "apple"
   },
@@ -1208,8 +1899,14 @@
     "id": 63,
     "name": "Poire",
     "type": "aliment",
-    "category": ["digestion", "détox"],
-    "symptoms": ["constipation", "digestion"],
+    "category": [
+      "digestion",
+      "détox"
+    ],
+    "symptoms": [
+      "constipation",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1219,7 +1916,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "hydratation"],
+    "properties": [
+      "fibres",
+      "hydratation"
+    ],
     "description": "Fruit hydratant riche en fibres solubles.",
     "image": "pear"
   },
@@ -1227,8 +1927,14 @@
     "id": 64,
     "name": "Orange",
     "type": "aliment",
-    "category": ["immunité", "antioxydant"],
-    "symptoms": ["fatigue", "immunite"],
+    "category": [
+      "immunité",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "fatigue",
+      "immunite"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1237,8 +1943,13 @@
         "description": "Consommer entière ou en jus frais."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["vitamineC", "flavonoïdes"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "vitamineC",
+      "flavonoïdes"
+    ],
     "description": "Agrume riche en vitamine C renforçant défenses.",
     "image": "orange"
   },
@@ -1246,8 +1957,14 @@
     "id": 65,
     "name": "Fraise",
     "type": "aliment",
-    "category": ["antioxydant", "immunité"],
-    "symptoms": ["peau", "inflammation"],
+    "category": [
+      "antioxydant",
+      "immunité"
+    ],
+    "symptoms": [
+      "peau",
+      "inflammation"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1256,8 +1973,13 @@
         "description": "Consommer entière ou en smoothie."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["vitamineC", "polyphenols"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "vitamineC",
+      "polyphenols"
+    ],
     "description": "Fruit rouge riche en antioxydants protecteurs.",
     "image": "strawberry"
   },
@@ -1265,8 +1987,15 @@
     "id": 66,
     "name": "Myrtille",
     "type": "aliment",
-    "category": ["vision", "antioxydant", "cerveau"],
-    "symptoms": ["cognition", "vision"],
+    "category": [
+      "vision",
+      "antioxydant",
+      "cerveau"
+    ],
+    "symptoms": [
+      "cognition",
+      "vision"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1276,7 +2005,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["anthocyanes", "neuroprotecteur"],
+    "properties": [
+      "anthocyanes",
+      "neuroprotecteur"
+    ],
     "description": "Baie protectrice du cerveau et de la vue.",
     "image": "blueberry"
   },
@@ -1284,8 +2016,14 @@
     "id": 67,
     "name": "Framboise",
     "type": "aliment",
-    "category": ["antioxydant", "digestion"],
-    "symptoms": ["constipation", "peau"],
+    "category": [
+      "antioxydant",
+      "digestion"
+    ],
+    "symptoms": [
+      "constipation",
+      "peau"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1295,7 +2033,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "polyphenols"],
+    "properties": [
+      "fibres",
+      "polyphenols"
+    ],
     "description": "Baie riche en fibres et micronutriments.",
     "image": "raspberry"
   },
@@ -1303,8 +2044,14 @@
     "id": 68,
     "name": "Tomate",
     "type": "aliment",
-    "category": ["cardio", "antioxydant"],
-    "symptoms": ["inflammation", "peau"],
+    "category": [
+      "cardio",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "inflammation",
+      "peau"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1314,7 +2061,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["lycopene", "vitamineC"],
+    "properties": [
+      "lycopene",
+      "vitamineC"
+    ],
     "description": "Fruit-légume riche en lycopène protecteur cardiovasculaire.",
     "image": "tomato"
   },
@@ -1322,8 +2072,14 @@
     "id": 69,
     "name": "Concombre",
     "type": "aliment",
-    "category": ["détox", "hydratation"],
-    "symptoms": ["digestion", "peau"],
+    "category": [
+      "détox",
+      "hydratation"
+    ],
+    "symptoms": [
+      "digestion",
+      "peau"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1333,7 +2089,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["hydratation", "silice"],
+    "properties": [
+      "hydratation",
+      "silice"
+    ],
     "description": "Légume très hydratant bénéfique pour la peau.",
     "image": "cucumber"
   },
@@ -1341,8 +2100,13 @@
     "id": 70,
     "name": "Aubergine",
     "type": "aliment",
-    "category": ["digestion", "cardio"],
-    "symptoms": ["cholesterol"],
+    "category": [
+      "digestion",
+      "cardio"
+    ],
+    "symptoms": [
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1352,7 +2116,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "polyphenols"],
+    "properties": [
+      "fibres",
+      "polyphenols"
+    ],
     "description": "Légume violet protecteur du cœur.",
     "image": "eggplant"
   },
@@ -1360,8 +2127,15 @@
     "id": 71,
     "name": "Brocoli",
     "type": "aliment",
-    "category": ["détox", "immunité", "anti-inflammatoire"],
-    "symptoms": ["inflammation", "digestion"],
+    "category": [
+      "détox",
+      "immunité",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "inflammation",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson_vapeur",
@@ -1371,7 +2145,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["sulforaphane", "vitamineC"],
+    "properties": [
+      "sulforaphane",
+      "vitamineC"
+    ],
     "description": "Crucifère riche en composés détoxifiants.",
     "image": "broccoli"
   },
@@ -1379,8 +2156,13 @@
     "id": 72,
     "name": "Chou-fleur",
     "type": "aliment",
-    "category": ["détox", "digestion"],
-    "symptoms": ["digestion"],
+    "category": [
+      "détox",
+      "digestion"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1389,8 +2171,13 @@
         "description": "Cuire vapeur ou rôtir."
       }
     ],
-    "contraindications": ["ballonnements"],
-    "properties": ["fibres", "glucosinolates"],
+    "contraindications": [
+      "ballonnements"
+    ],
+    "properties": [
+      "fibres",
+      "glucosinolates"
+    ],
     "description": "Crucifère soutien digestion et foie.",
     "image": "cauliflower"
   },
@@ -1398,8 +2185,14 @@
     "id": 73,
     "name": "Chou rouge",
     "type": "aliment",
-    "category": ["détox", "antioxydant"],
-    "symptoms": ["digestion", "inflammation"],
+    "category": [
+      "détox",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "digestion",
+      "inflammation"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1409,7 +2202,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["anthocyanes", "fibres"],
+    "properties": [
+      "anthocyanes",
+      "fibres"
+    ],
     "description": "Crucifère coloré riche en pigments protecteurs.",
     "image": "redcabbage"
   },
@@ -1417,8 +2213,13 @@
     "id": 74,
     "name": "Courgette",
     "type": "aliment",
-    "category": ["hydratation", "digestion"],
-    "symptoms": ["digestion"],
+    "category": [
+      "hydratation",
+      "digestion"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1428,7 +2229,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "vitamineA"],
+    "properties": [
+      "fibres",
+      "vitamineA"
+    ],
     "description": "Légume hydratant facile à digérer.",
     "image": "zucchini"
   },
@@ -1436,8 +2240,13 @@
     "id": 75,
     "name": "Champignon de Paris",
     "type": "aliment",
-    "category": ["immunité", "nutrition"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "immunité",
+      "nutrition"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1447,7 +2256,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["vitamineD", "b12"],
+    "properties": [
+      "vitamineD",
+      "b12"
+    ],
     "description": "Champignon riche en nutriments bénéfiques.",
     "image": "mushroom"
   },
@@ -1455,8 +2267,14 @@
     "id": 76,
     "name": "Épinard",
     "type": "aliment",
-    "category": ["fer", "antioxydant"],
-    "symptoms": ["fatigue", "anemie"],
+    "category": [
+      "fer",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "fatigue",
+      "anemie"
+    ],
     "uses": [
       {
         "form": "cru_vapeur",
@@ -1465,8 +2283,13 @@
         "description": "Cru en salade ou cuit léger."
       }
     ],
-    "contraindications": ["calculs_rénaux"],
-    "properties": ["fer", "acide_folique"],
+    "contraindications": [
+      "calculs_rénaux"
+    ],
+    "properties": [
+      "fer",
+      "acide_folique"
+    ],
     "description": "Légume vert riche en fer et vitamines.",
     "image": "spinach"
   },
@@ -1474,8 +2297,14 @@
     "id": 77,
     "name": "Patate douce",
     "type": "aliment",
-    "category": ["énergie", "glycémie"],
-    "symptoms": ["fatigue", "digestion"],
+    "category": [
+      "énergie",
+      "glycémie"
+    ],
+    "symptoms": [
+      "fatigue",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson_four",
@@ -1485,7 +2314,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["beta_carotene", "fibres"],
+    "properties": [
+      "beta_carotene",
+      "fibres"
+    ],
     "description": "Tubercule nourrissant à IG faible.",
     "image": "sweetpotato"
   },
@@ -1493,8 +2325,13 @@
     "id": 78,
     "name": "Pomme de terre",
     "type": "aliment",
-    "category": ["énergie", "sport"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "énergie",
+      "sport"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1503,8 +2340,13 @@
         "description": "Cuire vapeur ou four."
       }
     ],
-    "contraindications": ["diabète"],
-    "properties": ["amidon", "potassium"],
+    "contraindications": [
+      "diabète"
+    ],
+    "properties": [
+      "amidon",
+      "potassium"
+    ],
     "description": "Tubercule énergétique riche en potassium.",
     "image": "potato"
   },
@@ -1512,8 +2354,15 @@
     "id": 79,
     "name": "Betterave",
     "type": "aliment",
-    "category": ["circulation", "sport", "antioxydant"],
-    "symptoms": ["circulation", "fatigue"],
+    "category": [
+      "circulation",
+      "sport",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "circulation",
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cru_râpé",
@@ -1522,8 +2371,13 @@
         "description": "Consommer crue en salade ou jus."
       }
     ],
-    "contraindications": ["calculs_rénaux"],
-    "properties": ["nitrates", "antioxydant"],
+    "contraindications": [
+      "calculs_rénaux"
+    ],
+    "properties": [
+      "nitrates",
+      "antioxydant"
+    ],
     "description": "Légume racine améliorant circulation et endurance.",
     "image": "beetroot"
   },
@@ -1531,8 +2385,16 @@
     "id": 80,
     "name": "Gingembre frais",
     "type": "épice",
-    "category": ["anti-nausée", "énergie", "digestif"],
-    "symptoms": ["nausee", "digestion", "fatigue"],
+    "category": [
+      "anti-nausée",
+      "énergie",
+      "digestif"
+    ],
+    "symptoms": [
+      "nausee",
+      "digestion",
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -1543,8 +2405,13 @@
         "description": "Râper racine et infuser dans eau chaude."
       }
     ],
-    "contraindications": ["calculs_biliaires"],
-    "properties": ["anti-inflammatoire", "stimulant"],
+    "contraindications": [
+      "calculs_biliaires"
+    ],
+    "properties": [
+      "anti-inflammatoire",
+      "stimulant"
+    ],
     "description": "Racine tonique puissante pour nausées et énergie.",
     "image": "freshginger"
   },
@@ -1552,8 +2419,14 @@
     "id": 81,
     "name": "Curcuma",
     "type": "épice",
-    "category": ["anti-inflammatoire", "détox"],
-    "symptoms": ["inflammation", "digestion"],
+    "category": [
+      "anti-inflammatoire",
+      "détox"
+    ],
+    "symptoms": [
+      "inflammation",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -1562,8 +2435,12 @@
         "description": "Ajouter aux plats ou boissons avec du poivre noir."
       }
     ],
-    "contraindications": ["calculs_biliaires"],
-    "properties": ["curcumine"],
+    "contraindications": [
+      "calculs_biliaires"
+    ],
+    "properties": [
+      "curcumine"
+    ],
     "description": "Épice anti-inflammatoire majeure.",
     "image": "turmeric"
   },
@@ -1571,8 +2448,14 @@
     "id": 82,
     "name": "Cannelle",
     "type": "épice",
-    "category": ["glycémie", "digestion"],
-    "symptoms": ["diabete", "digestion"],
+    "category": [
+      "glycémie",
+      "digestion"
+    ],
+    "symptoms": [
+      "diabete",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -1581,8 +2464,12 @@
         "description": "Parsemer boissons ou desserts."
       }
     ],
-    "contraindications": ["grossesse"],
-    "properties": ["polyphenols"],
+    "contraindications": [
+      "grossesse"
+    ],
+    "properties": [
+      "polyphenols"
+    ],
     "description": "Régule glycémie et digestion.",
     "image": "cinnamon"
   },
@@ -1590,8 +2477,13 @@
     "id": 83,
     "name": "Paprika",
     "type": "épice",
-    "category": ["digestion", "antioxydant"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestion",
+      "antioxydant"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -1601,7 +2493,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["capasaicine", "vitamineA"],
+    "properties": [
+      "capasaicine",
+      "vitamineA"
+    ],
     "description": "Épice douce stimulante digestive.",
     "image": "paprika"
   },
@@ -1609,8 +2504,13 @@
     "id": 84,
     "name": "Curry",
     "type": "épice",
-    "category": ["digestion", "anti-inflammatoire"],
-    "symptoms": ["digestion"],
+    "category": [
+      "digestion",
+      "anti-inflammatoire"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -1619,8 +2519,13 @@
         "description": "Assaisonnement dans sauces et plats."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["curcumine", "épices_mixtes"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "curcumine",
+      "épices_mixtes"
+    ],
     "description": "Mélange digestif et stimulant.",
     "image": "curry"
   },
@@ -1628,8 +2533,14 @@
     "id": 85,
     "name": "Menthe poivrée",
     "type": "plante",
-    "category": ["digestif", "anti-nausée"],
-    "symptoms": ["nausee", "digestion"],
+    "category": [
+      "digestif",
+      "anti-nausée"
+    ],
+    "symptoms": [
+      "nausee",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -1639,8 +2550,12 @@
         "description": "Infuser feuilles 9 minutes."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["menthol"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "menthol"
+    ],
     "description": "Plante digestive et antispasmodique.",
     "image": "peppermint"
   },
@@ -1648,8 +2563,14 @@
     "id": 86,
     "name": "Thym",
     "type": "plante",
-    "category": ["respiratoire", "immunité"],
-    "symptoms": ["toux", "rhume"],
+    "category": [
+      "respiratoire",
+      "immunité"
+    ],
+    "symptoms": [
+      "toux",
+      "rhume"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -1659,8 +2580,12 @@
         "description": "Infuser 10 min."
       }
     ],
-    "contraindications": ["grossesse"],
-    "properties": ["thymol"],
+    "contraindications": [
+      "grossesse"
+    ],
+    "properties": [
+      "thymol"
+    ],
     "description": "Plante antiseptique respiratoire.",
     "image": "thyme"
   },
@@ -1668,8 +2593,15 @@
     "id": 87,
     "name": "Romarin",
     "type": "plante",
-    "category": ["détox", "circulation", "mémoire"],
-    "symptoms": ["fatigue", "digestion"],
+    "category": [
+      "détox",
+      "circulation",
+      "mémoire"
+    ],
+    "symptoms": [
+      "fatigue",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "infusion",
@@ -1679,8 +2611,12 @@
         "description": "Infuser 8 min."
       }
     ],
-    "contraindications": ["hypertension"],
-    "properties": ["cinéole"],
+    "contraindications": [
+      "hypertension"
+    ],
+    "properties": [
+      "cinéole"
+    ],
     "description": "Stimulant hépatique et cérébral.",
     "image": "rosemary"
   },
@@ -1688,8 +2624,13 @@
     "id": 88,
     "name": "Sauce soja",
     "type": "aliment",
-    "category": ["probiotique", "minéraux"],
-    "symptoms": ["digestion"],
+    "category": [
+      "probiotique",
+      "minéraux"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -1698,8 +2639,12 @@
         "description": "Utiliser en assaisonnement."
       }
     ],
-    "contraindications": ["hypertension"],
-    "properties": ["fermentation"],
+    "contraindications": [
+      "hypertension"
+    ],
+    "properties": [
+      "fermentation"
+    ],
     "description": "Condiment fermenté riche en umami.",
     "image": "soy sauce"
   },
@@ -1707,8 +2652,14 @@
     "id": 89,
     "name": "Vinaigre de cidre",
     "type": "condiment",
-    "category": ["digestion", "glycémie"],
-    "symptoms": ["digestion", "diabete"],
+    "category": [
+      "digestion",
+      "glycémie"
+    ],
+    "symptoms": [
+      "digestion",
+      "diabete"
+    ],
     "uses": [
       {
         "form": "dilué",
@@ -1717,8 +2668,12 @@
         "description": "1 cuillère dans 200 ml d'eau."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["acide_acétique"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "acide_acétique"
+    ],
     "description": "Régule glycémie et motilité digestive.",
     "image": "apple vinegar"
   },
@@ -1726,8 +2681,13 @@
     "id": 90,
     "name": "Kombucha",
     "type": "boisson",
-    "category": ["probiotique", "digestion"],
-    "symptoms": ["digestion"],
+    "category": [
+      "probiotique",
+      "digestion"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "boisson",
@@ -1736,8 +2696,12 @@
         "description": "Boire frais."
       }
     ],
-    "contraindications": ["grossesse"],
-    "properties": ["ferments"],
+    "contraindications": [
+      "grossesse"
+    ],
+    "properties": [
+      "ferments"
+    ],
     "description": "Boisson fermentée bénéfique microbiote.",
     "image": "kombucha"
   },
@@ -1745,8 +2709,13 @@
     "id": 91,
     "name": "Kefir de lait",
     "type": "boisson",
-    "category": ["probiotique", "immunité"],
-    "symptoms": ["digestion"],
+    "category": [
+      "probiotique",
+      "immunité"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "boisson",
@@ -1755,8 +2724,12 @@
         "description": "Boire nature."
       }
     ],
-    "contraindications": ["intolérance_lactose"],
-    "properties": ["ferments_lactiques"],
+    "contraindications": [
+      "intolérance_lactose"
+    ],
+    "properties": [
+      "ferments_lactiques"
+    ],
     "description": "Boisson fermentée équilibrant microbiote.",
     "image": "milk kefir"
   },
@@ -1764,8 +2737,13 @@
     "id": 92,
     "name": "Chou fermenté (choucroute)",
     "type": "aliment",
-    "category": ["probiotique", "détox"],
-    "symptoms": ["digestion"],
+    "category": [
+      "probiotique",
+      "détox"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "fermenté",
@@ -1774,8 +2752,12 @@
         "description": "Consommer cru non pasteurisé."
       }
     ],
-    "contraindications": ["hypertension"],
-    "properties": ["fermentation"],
+    "contraindications": [
+      "hypertension"
+    ],
+    "properties": [
+      "fermentation"
+    ],
     "description": "Source naturelle de probiotiques et vitamines.",
     "image": "sauerkraut"
   },
@@ -1783,8 +2765,14 @@
     "id": 93,
     "name": "Laitue",
     "type": "aliment",
-    "category": ["hydratation", "calmante"],
-    "symptoms": ["digestion", "insomnie"],
+    "category": [
+      "hydratation",
+      "calmante"
+    ],
+    "symptoms": [
+      "digestion",
+      "insomnie"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1794,7 +2782,10 @@
       }
     ],
     "contraindications": [],
-    "properties": ["fibres", "lactucarium"],
+    "properties": [
+      "fibres",
+      "lactucarium"
+    ],
     "description": "Légume léger calmant et hydratant.",
     "image": "lettuce"
   },
@@ -1802,8 +2793,13 @@
     "id": 94,
     "name": "Fèves",
     "type": "aliment",
-    "category": ["protéines", "fer"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "protéines",
+      "fer"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1812,8 +2808,12 @@
         "description": "Cuire 25 minutes."
       }
     ],
-    "contraindications": ["favisme"],
-    "properties": ["L-dopa"],
+    "contraindications": [
+      "favisme"
+    ],
+    "properties": [
+      "L-dopa"
+    ],
     "description": "Légumineuse nutritive et stimulante mentale.",
     "image": "broad beans"
   },
@@ -1821,8 +2821,13 @@
     "id": 95,
     "name": "Sarrasin",
     "type": "aliment",
-    "category": ["protéines", "glycémie"],
-    "symptoms": ["digestion"],
+    "category": [
+      "protéines",
+      "glycémie"
+    ],
+    "symptoms": [
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1832,7 +2837,9 @@
       }
     ],
     "contraindications": [],
-    "properties": ["rutine"],
+    "properties": [
+      "rutine"
+    ],
     "description": "Céréale sans gluten bénéfique circulation.",
     "image": "buckwheat"
   },
@@ -1840,8 +2847,13 @@
     "id": 96,
     "name": "Orge",
     "type": "aliment",
-    "category": ["glycémie", "digestion"],
-    "symptoms": ["cholesterol"],
+    "category": [
+      "glycémie",
+      "digestion"
+    ],
+    "symptoms": [
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1850,8 +2862,12 @@
         "description": "Cuire 25-30 min."
       }
     ],
-    "contraindications": ["gluten"],
-    "properties": ["beta_glucane"],
+    "contraindications": [
+      "gluten"
+    ],
+    "properties": [
+      "beta_glucane"
+    ],
     "description": "Céréale riche en fibres régulant glycémie.",
     "image": "barley"
   },
@@ -1859,8 +2875,14 @@
     "id": 97,
     "name": "Cacao pur",
     "type": "aliment",
-    "category": ["antioxydant", "humeur"],
-    "symptoms": ["fatigue", "stress"],
+    "category": [
+      "antioxydant",
+      "humeur"
+    ],
+    "symptoms": [
+      "fatigue",
+      "stress"
+    ],
     "uses": [
       {
         "form": "poudre",
@@ -1869,8 +2891,13 @@
         "description": "Ajouter à boissons chaudes."
       }
     ],
-    "contraindications": ["reflux"],
-    "properties": ["polyphenols", "theobromine"],
+    "contraindications": [
+      "reflux"
+    ],
+    "properties": [
+      "polyphenols",
+      "theobromine"
+    ],
     "description": "Superfood stimulant et antioxydant.",
     "image": "cacao"
   },
@@ -1878,8 +2905,14 @@
     "id": 98,
     "name": "Ail des ours",
     "type": "plante",
-    "category": ["détox", "cardio"],
-    "symptoms": ["cholesterol", "digestion"],
+    "category": [
+      "détox",
+      "cardio"
+    ],
+    "symptoms": [
+      "cholesterol",
+      "digestion"
+    ],
     "uses": [
       {
         "form": "cru",
@@ -1889,7 +2922,9 @@
       }
     ],
     "contraindications": [],
-    "properties": ["allicine"],
+    "properties": [
+      "allicine"
+    ],
     "description": "Plante puissante pour détox et cœur.",
     "image": "wild garlic"
   },
@@ -1897,8 +2932,13 @@
     "id": 99,
     "name": "Huile de noix",
     "type": "condiment",
-    "category": ["cardio", "cerveau"],
-    "symptoms": ["cholesterol"],
+    "category": [
+      "cardio",
+      "cerveau"
+    ],
+    "symptoms": [
+      "cholesterol"
+    ],
     "uses": [
       {
         "form": "assaisonnement",
@@ -1907,8 +2947,12 @@
         "description": "Ne pas cuire, utiliser à froid."
       }
     ],
-    "contraindications": ["allergie"],
-    "properties": ["omega3"],
+    "contraindications": [
+      "allergie"
+    ],
+    "properties": [
+      "omega3"
+    ],
     "description": "Source d'oméga-3 pour cœur et cerveau.",
     "image": "walnut oil"
   },
@@ -1916,8 +2960,13 @@
     "id": 100,
     "name": "Graisse de coco",
     "type": "gras",
-    "category": ["énergie", "cuisson"],
-    "symptoms": ["fatigue"],
+    "category": [
+      "énergie",
+      "cuisson"
+    ],
+    "symptoms": [
+      "fatigue"
+    ],
     "uses": [
       {
         "form": "cuisson",
@@ -1926,8 +2975,12 @@
         "description": "Utiliser pour cuisson haute température."
       }
     ],
-    "contraindications": ["cholestérol"],
-    "properties": ["MCT"],
+    "contraindications": [
+      "cholestérol"
+    ],
+    "properties": [
+      "MCT"
+    ],
     "description": "Lipide rapide, bon pour énergie.",
     "image": "coconut oil"
   }
