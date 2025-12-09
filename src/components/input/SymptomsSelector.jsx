@@ -6,7 +6,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMdWarning } from "react-icons/io";
 import symptomsData from "../../data/symptomList.json";
 import synonymsData from "../../data/synonymsSymptomList.json";
-import { normalizeSymptom } from "../../utils/normalizeSymptom";
+import { normalizeForMatching } from "../../utils/normalizeSymptom";
 
 // Fonction pour capitaliser la première lettre d'un symptôme
 const capitalizeSymptom = (symptom) => {
@@ -19,9 +19,14 @@ const getSynonymGroup = (symptom) => {
 };
 
 // Fonction pour vérifier si un symptôme ou ses synonymes sont déjà sélectionnés
+// Utilise normalizeForMatching pour matching flexible (insensible aux accents)
 const isSymptomOrSynonymSelected = (symptom, selectedSymptoms) => {
   const synonymGroup = getSynonymGroup(symptom);
-  return synonymGroup.some((s) => selectedSymptoms.includes(s));
+  return synonymGroup.some((s) =>
+    selectedSymptoms.some((selected) =>
+      normalizeForMatching(s) === normalizeForMatching(selected)
+    )
+  );
 };
 
 export default function SymptomsSelector({
@@ -55,7 +60,7 @@ export default function SymptomsSelector({
     );
   }, []);
 
-  // Filtrage en temps réel (normalisé, max 10 résultats)
+  // Filtrage en temps réel avec matching flexible (avec/sans accents)
   // Exclut les symptômes déjà sélectionnés ET leurs synonymes
   useEffect(() => {
     if (inputValue.trim() === "") {
@@ -65,11 +70,13 @@ export default function SymptomsSelector({
       return;
     }
 
-    // Normaliser l'input pour la recherche (les données sont déjà normalisées)
-    const normalizedInput = normalizeSymptom(inputValue);
+    // Normaliser l'input pour matching flexible (sans accents)
+    const normalizedInput = normalizeForMatching(inputValue);
 
     const filtered = symptomsData
-      .filter((symptom) => symptom.includes(normalizedInput))
+      .filter((symptom) =>
+        normalizeForMatching(symptom).includes(normalizedInput)
+      )
       .filter(
         (symptom) => !isSymptomOrSynonymSelected(symptom, selectedSymptoms),
       )
