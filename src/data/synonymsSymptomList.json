@@ -1,8 +1,25 @@
 {
   "mal de tête": ["maux de tête", "céphalée", "migraine"],
-  "mal de dents": ["rage de dents", "douleur dentaire"],
-  "mal de gorge": ["angine", "pharyngite"],
-  "troubles digestifs": ["digestion", "problèmes digestifs"],
+  "mal de dents": [
+    "rage de dents",
+    "douleur dentaire",
+    "carie",
+    "maux de dents"
+  ],
+  "mal de gorge": [
+    "angine",
+    "pharyngite",
+    "maux de gorge",
+    "gorge irritée",
+    "gorge douloureuse"
+  ],
+  "troubles digestifs": [
+    "digestion",
+    "problèmes digestifs",
+    "maux d'estomac",
+    "maux de ventre",
+    "mal au ventre"
+  ],
   "crampes musculaires": ["crampes"],
   "diarrhée": ["selles liquides", "gastro"],
   "nausée": ["mal des transports", "envie de vomir", "haut le cœur"],

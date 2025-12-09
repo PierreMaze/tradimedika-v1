@@ -2,6 +2,39 @@
 
 ---
 
+## [0.3.4] - 2025-12-09
+
+### <u>add:</u>
+
+- Added `findMainSymptomsFromSynonym()` function in `src/components/input/SymptomsSelector.jsx` for reverse synonym lookup
+- Added multiple new synonyms to `src/data/synonymsSymptomList.json` for improved search coverage
+
+### <u>update:</u>
+
+- Updated `src/data/synonymsSymptomList.json` with enriched synonym mappings:
+  - "mal de dents" : added "carie" and "maux de dents"
+  - "mal de gorge" : added "maux de gorge", "gorge irritée", "gorge douloureuse"
+  - "troubles digestifs" : added "maux d'estomac", "maux de ventre", "mal au ventre"
+- Updated autocomplete filtering logic in `SymptomsSelector.jsx` to support multiple main symptoms from single synonym
+
+### <u>refactor:</u>
+
+- Refactored `findMainSymptomFromSynonym()` to `findMainSymptomsFromSynonym()` (plural) returning array instead of single value
+- Refactored synonym matching to return ALL matching main symptoms instead of only the first one
+
+### <u>fix:</u>
+
+- Fixed autocomplete showing only one symptom when typing synonym that matches multiple entries
+- Fixed "maux" query now correctly returns "Mal de tête", "Mal de dents", "Mal de gorge" (all matching symptoms)
+
+### <u>features:</u>
+
+- **Multi-Symptom Synonym Lookup**: Typing a synonym now suggests ALL related main symptoms
+- **Enhanced Search Coverage**: 23+ new synonym variations added for better discoverability
+- **Example**: typing "maux" now shows all "mal de..." symptoms instead of just one
+
+---
+
 ## [0.3.3] - 2025-12-09
 
 ### <u>add:</u>
