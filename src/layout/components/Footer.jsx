@@ -1,6 +1,6 @@
 // tradimedika-v1/src/layout/Footer.jsx
 import { motion } from "framer-motion";
-import LogoTradimedika from "./components/LogoTradimedika";
+import LogoTradimedika from "./LogoTradimedika";
 
 const Footer = () => {
   return (
