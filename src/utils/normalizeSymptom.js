@@ -55,7 +55,9 @@ export function normalizeSymptom(symptom) {
  */
 export function normalizeForMatching(symptom) {
   if (typeof symptom !== "string") {
-    console.warn(`[normalizeForMatching] Expected string, got ${typeof symptom}`);
+    console.warn(
+      `[normalizeForMatching] Expected string, got ${typeof symptom}`,
+    );
     return "";
   }
 

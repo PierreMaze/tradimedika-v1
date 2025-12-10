@@ -27,7 +27,7 @@ function NotFound() {
         <h2 className="mb-2 text-3xl font-bold lg:text-4xl">
           Page introuvable
         </h2>
-        <p className="text-neutral-600 dark:text-neutral-400 mb-8 text-lg">
+        <p className="mb-8 text-lg text-neutral-600 dark:text-neutral-400">
           Désolé, la page que vous recherchez n&apos;existe pas ou a été
           déplacée.
         </p>
@@ -41,20 +41,20 @@ function NotFound() {
         <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
           <Link
             to="/"
-            className="bg-emerald-600 hover:bg-emerald-700 rounded-lg px-6 py-3 font-semibold text-white transition duration-200"
+            className="rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white transition duration-200 hover:bg-emerald-700"
           >
             Retour à l&apos;accueil
           </Link>
           <Link
             to="/remedies"
-            className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-950 rounded-lg border-2 px-6 py-3 font-semibold transition duration-200"
+            className="rounded-lg border-2 border-emerald-600 px-6 py-3 font-semibold text-emerald-600 transition duration-200 hover:bg-emerald-50 dark:hover:bg-emerald-950"
           >
             Explorer les remèdes
           </Link>
         </div>
 
         {/* Helpful Links */}
-        <div className="text-neutral-500 dark:text-neutral-500 mt-12 text-sm">
+        <div className="mt-12 text-sm text-neutral-500 dark:text-neutral-500">
           <p>Suggestions :</p>
           <ul className="mt-2 space-y-1">
             <li>Vérifiez l&apos;URL dans la barre d&apos;adresse</li>

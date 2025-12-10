@@ -64,7 +64,9 @@ Object.entries(synonyms).forEach(([key, values]) => {
   }
   values.forEach((value) => {
     if (invalidCharPattern.test(value)) {
-      console.error(`  ❌ Caractère invalide dans valeur de synonyms: "${value}"`);
+      console.error(
+        `  ❌ Caractère invalide dans valeur de synonyms: "${value}"`,
+      );
       invalidChars++;
     }
   });
@@ -83,7 +85,9 @@ db.forEach((remedy) => {
 });
 
 if (invalidChars === 0) {
-  console.log("  ✅ Tous les caractères sont valides (français avec accents)\n");
+  console.log(
+    "  ✅ Tous les caractères sont valides (français avec accents)\n",
+  );
 } else {
   errors += invalidChars;
 }

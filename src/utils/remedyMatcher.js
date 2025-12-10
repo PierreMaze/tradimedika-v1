@@ -52,8 +52,8 @@ export function findMatchingRemedies(selectedSymptoms, database) {
         remedy.symptoms.some(
           (remedySymptom) =>
             normalizeForMatching(selectedSymptom) ===
-            normalizeForMatching(remedySymptom)
-        )
+            normalizeForMatching(remedySymptom),
+        ),
       );
 
       // Si aucun match, on exclut ce remède

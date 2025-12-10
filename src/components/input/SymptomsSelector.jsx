@@ -136,7 +136,8 @@ export default function SymptomsSelector({
   }, [inputValue, selectedSymptoms]);
 
   // Dérive isOpen du nombre de résultats filtrés et de l'état de fermeture forcée
-  const isOpen = !isForcedClosed && filteredSymptoms.length > 0 && inputValue.trim() !== "";
+  const isOpen =
+    !isForcedClosed && filteredSymptoms.length > 0 && inputValue.trim() !== "";
 
   // Réinitialise selectedIndex et réouvre le dropdown quand inputValue change
   useEffect(() => {

@@ -1,6 +1,9 @@
 // hooks/useSymptomTags.js
 import { useState } from "react";
-import { normalizeSymptom, normalizeForMatching } from "../utils/normalizeSymptom";
+import {
+  normalizeSymptom,
+  normalizeForMatching,
+} from "../utils/normalizeSymptom";
 
 /**
  * Hook personnalisé pour gérer la sélection de symptômes
@@ -31,7 +34,7 @@ export function useSymptomTags() {
 
     // Vérification anti-doublon (insensible aux accents)
     const isDuplicate = selectedSymptoms.some(
-      (s) => normalizeForMatching(s) === normalizedMatching
+      (s) => normalizeForMatching(s) === normalizedMatching,
     );
 
     if (!isDuplicate) {
