@@ -1,6 +1,5 @@
 // tradimedika-v1/src/pages/RemedyResultDetails.jsx
 import { Link, useParams } from "react-router-dom";
-import BreadCrumb from "../components/navigation/BreadCrumb";
 
 /**
  * RemedyResultDetails Page - Placeholder
@@ -18,8 +17,6 @@ function RemedyResultDetails() {
 
   return (
     <div className="text-dark dark:text-light w-full transition duration-300 ease-in-out">
-      {/* Breadcrumb Navigation */}
-      <BreadCrumb />
       <h1 className="mb-4 text-3xl font-bold lg:text-4xl">
         Détails du Remède #{id}
       </h1>
