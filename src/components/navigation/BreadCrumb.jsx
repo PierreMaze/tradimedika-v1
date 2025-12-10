@@ -1,7 +1,8 @@
 // tradimedika-v1/src/components/navigation/BreadCrumb.jsx
-import { NavLink, useLocation, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import { IoChevronForward } from "react-icons/io5";
+import { NavLink, useLocation, useParams } from "react-router-dom";
+import { LINK_INTERNAL_STYLES } from "../../constants/linkStyles";
 
 /**
  * BreadCrumb Component - Navigation breadcrumb trail
@@ -80,16 +81,16 @@ function BreadcrumbItem({ item, isLast }) {
         <>
           <NavLink
             to={item.path}
-            className="text-emerald-600 hover:underline dark:text-emerald-400 transition duration-200"
+            className={LINK_INTERNAL_STYLES}
             aria-label={`Naviguer vers ${item.label}`}
           >
             {item.label}
           </NavLink>
-          <IoChevronForward className="text-neutral-400 dark:text-neutral-600 text-xs" />
+          <IoChevronForward className="text-xs text-neutral-400 dark:text-neutral-600" />
         </>
       ) : (
         <span
-          className="text-neutral-600 dark:text-neutral-400 font-medium"
+          className="font-medium text-neutral-600 dark:text-neutral-400"
           aria-current="page"
         >
           {item.label}
@@ -123,10 +124,7 @@ function BreadCrumb() {
   }
 
   return (
-    <nav
-      aria-label="Fil d'Ariane"
-      className="mb-6 w-full"
-    >
+    <nav aria-label="Fil d'Ariane" className="mb-6 w-full">
       <ol className="flex items-center gap-2 text-xs sm:text-sm">
         {pathSegments.map((item, index) => (
           <BreadcrumbItem

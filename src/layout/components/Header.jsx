@@ -1,7 +1,7 @@
 // tradimedika-v1/src/layout/Header.jsx
 import { motion } from "framer-motion";
-import DarkModeToggle from "../components/btn/DarkModeToggle";
-import LogoTradimedika from "./components/LogoTradimedika";
+import DarkModeToggle from "../../components/btn/DarkModeToggle";
+import LogoTradimedika from "./LogoTradimedika";
 
 const headerVariants = {
   hidden: {
