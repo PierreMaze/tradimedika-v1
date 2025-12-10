@@ -2,6 +2,93 @@
 
 ---
 
+## [0.8.0] - 2025-12-10
+
+### <u>add:</u>
+
+- Added `src/components/remedy/` directory for remedy display components
+- Added `RemedyCard.jsx` component for individual remedy display with clickable card layout
+- Added `RemedyResultList.jsx` container component for responsive grid layout of remedy cards
+- Added `RemedyResultNotFound.jsx` component for empty state messaging with two variants
+- Added responsive grid layout: 1 column (mobile) → 2 columns (tablet) → 3 columns (desktop)
+- Added type badges for remedies (aliment, épice, plante) with distinct colors
+- Added property display with score indicators (e.g., "antioxydant (7/10)")
+- Added safety badges: pregnancy safe, children age, professional verification
+- Added external image URL support in RemedyCard component
+- Added entire card click navigation to `/remedies/:id` detail page
+- Added hover effects on cards (scale 1.02, shadow transition)
+- Added Framer Motion animations for card enter/exit transitions
+- Added empty state variants: "no-results" vs "no-filter-match"
+- Added optional "Return to Home" button in empty state component
+- Added ARIA accessibility attributes to cards and empty states
+- Added line-clamp utility for description text truncation (3 lines max)
+- Added PropTypes validation to all three new components
+- Added JSDoc comments explaining component purpose and features
+
+### <u>update:</u>
+
+- Updated `RemedyResult.jsx` to import and use `RemedyResultList` component
+- Updated `RemedyResult.jsx` to replace placeholder card markup with new component architecture
+- Updated `RemedyResult.jsx` JSDoc comments to reflect implementation completion
+- Updated result counter to only display when filtered remedies exist
+- Updated filter display logic to conditionally render based on matched remedies
+- Updated `README.md` version badge from `0.7.0` to `0.8.0`
+- Updated `package.json` version from `0.7.0` to `0.8.0`
+
+### <u>remove:</u>
+
+- Removed placeholder card markup from `RemedyResult.jsx` (lines 82-103)
+- Removed placeholder message "🚧 RemedyCard et RemedyList seront implémentés dans Issue #41"
+- Removed inline empty state markup (now handled by RemedyResultNotFound component)
+- Removed duplicate conditional rendering logic (consolidated in RemedyResultList)
+
+### <u>refactor:</u>
+
+- Refactored `RemedyResult.jsx` to use component-based architecture instead of inline markup
+- Refactored empty state logic to support two distinct scenarios (no results vs no filter match)
+- Refactored remedy display from single column list to responsive grid layout
+- Extracted remedy card presentation logic into dedicated RemedyCard component
+- Extracted empty state presentation into dedicated RemedyResultNotFound component
+- Simplified `RemedyResult.jsx` from 138 lines to 90 lines (35% reduction)
+
+### <u>optimization:</u>
+
+- Optimized card rendering with React Router Link wrapper (entire card clickable)
+- Optimized images with lazy loading attribute
+- Optimized animations using GPU-accelerated properties (transform, opacity)
+- Optimized grid layout with CSS Grid instead of flex for better responsive performance
+
+### <u>standardization:</u>
+
+- Standardized component architecture pattern across remedy display system
+- Standardized dark mode support with Tailwind `dark:` variants in all components
+- Standardized animation patterns using Framer Motion across all remedy components
+- Standardized accessibility with proper ARIA labels and semantic HTML
+- Unified empty state design language with existing dashed border pattern
+
+### <u>features:</u>
+
+- **Responsive Grid Layout**: Automatic column adjustment based on screen size (mobile-first)
+- **Rich Remedy Cards**: Display image, name, type, description, properties, safety information
+- **Clickable Navigation**: Entire card acts as link to remedy detail page
+- **Smart Empty States**: Context-aware messaging for different empty result scenarios
+- **Property Scoring**: Visual score indicators for remedy properties (x/10 rating)
+- **Safety Indicators**: Clear visual badges for pregnancy safety, age restrictions, professional verification
+- **Type Classification**: Color-coded badges for aliment (blue), épice (orange), plante (green)
+- **Image Support**: External URL image loading with aspect-ratio preservation
+- **Accessibility**: Full ARIA support with proper roles and labels
+- **Dark Mode**: Complete theming support across all components
+- **Performance**: Lazy loading images and GPU-accelerated animations
+
+### <u>issues resolved:</u>
+
+- Issue #41: Created RemedyCard, RemedyResultList, and RemedyResultNotFound components
+- Completed remedy results page UI implementation (child of Issue #4)
+- Integrated new components with existing filtering system
+- Replaced all placeholder code with production-ready components
+
+---
+
 ## [0.7.0] - 2025-12-10
 
 ### <u>add:</u>

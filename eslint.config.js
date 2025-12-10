@@ -50,7 +50,7 @@ export default [
         {
           varsIgnorePattern: "^_",
           argsIgnorePattern: "^_",
-          ignoreRestSiblings: true
+          ignoreRestSiblings: true,
         },
       ],
     },

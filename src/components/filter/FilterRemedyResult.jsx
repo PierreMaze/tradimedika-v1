@@ -39,7 +39,10 @@ function extractUniqueSymptoms(matchedRemedies) {
  * - Calcul dérivé direct pendant render (pas de useMemo nécessaire)
  * - Pure function pour extraction des symptômes
  */
-export default function FilterRemedyResult({ matchedRemedies, onFilterChange }) {
+export default function FilterRemedyResult({
+  matchedRemedies,
+  onFilterChange,
+}) {
   const [activeTag, setActiveTag] = useState("all");
 
   // Extraire symptômes uniques et créer la liste des tags (ordre alphabétique)
