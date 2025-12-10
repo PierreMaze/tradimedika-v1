@@ -2,6 +2,51 @@
 
 ---
 
+## [0.8.1] - 2025-12-10
+
+### <u>documentation:</u>
+
+- Documented completion of Issue #44 (dynamic tag filter integration)
+- Confirmed all functional requirements for tag-based filtering are met
+- Verified integration between FilterRemedyResult, RemedyResult, and RemedyResultList components
+- Clarified that filtering logic is implemented inline in FilterRemedyResult component (not extracted to pageUtils.js)
+
+### <u>validation:</u>
+
+- Validated acceptance criteria for Issue #44:
+  - ✅ State management for selected tags (FilterRemedyResult.jsx line 46)
+  - ✅ Pass tag state to RemedyResultList (RemedyResult.jsx lines 41, 82)
+  - ✅ "Tous" tag resets filters (FilterRemedyResult.jsx line 55)
+  - ✅ Intersection-based filtering (lines 57-62)
+  - ✅ Show RemedyResultNotFound on no match (RemedyResultList.jsx line 21)
+  - ✅ Dynamic updates without reload (useEffect pattern line 65)
+  - ✅ Responsive mobile-first design (Grid breakpoints in RemedyResultList)
+  - ✅ Compatible with LayoutRemedyResult and BreadCrumb
+- Confirmed all components follow React best practices from CLAUDE.md
+- Verified dark mode support across all filter components
+- Confirmed ARIA accessibility attributes present
+
+### <u>features:</u>
+
+- **Dynamic Connection Complete**: Tag filters dynamically update remedy list without page reload
+- **State Flow**: FilterRemedyResult → onFilterChange callback → RemedyResult state → RemedyResultList props
+- **Empty State Handling**: Distinct messages for "no results" vs "no filter match"
+- **Filter Behavior**: Radio-button style single-selection with "Tous" reset option
+- **Performance**: React Compiler handles automatic optimization, no manual memoization needed
+
+### <u>implementation notes:</u>
+
+- Filtering logic implemented inline in FilterRemedyResult.jsx (lines 54-62) rather than extracted to pageUtils.js
+- Decision rationale: Current implementation is clean, maintainable, and follows component co-location principle
+- No state persistence: Filter resets to "Tous" on page reload (transient UI state by design)
+- No URL parameter support: Filter state not reflected in URL (simplified UX)
+
+### <u>issues resolved:</u>
+
+- Issue #44: Dynamic connection of tag filters with the list of remedies (child of Issue #4)
+
+---
+
 ## [0.8.0] - 2025-12-10
 
 ### <u>add:</u>
