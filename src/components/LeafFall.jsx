@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { GiFallingLeaf } from "react-icons/gi";
 
 export default function LeafFall() {
@@ -15,7 +15,9 @@ export default function LeafFall() {
     return () => clearTimeout(timer);
   }, []);
 
-  const leaves = useMemo(() => {
+  // Initialiser les feuilles avec useState pour garantir la pureté
+  // La fonction d'initialisation n'est appelée qu'une seule fois au montage
+  const [leaves] = useState(() => {
     return Array.from({ length: COUNT }).map((_, i) => {
       const startX = (i + 0.5) * (100 / COUNT);
       const startY = -10;
@@ -85,7 +87,7 @@ export default function LeafFall() {
         delay,
       };
     });
-  }, [COUNT]);
+  });
 
   if (!show) return null;
 

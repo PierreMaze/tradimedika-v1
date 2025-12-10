@@ -1,5 +1,5 @@
 // hooks/useDarkMode.js
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 import { useMediaQuery } from "./useMediaQuery";
 
@@ -23,14 +23,10 @@ export const useDarkMode = () => {
     null,
   );
 
-  // État interne du dark mode
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Initialisation : priorité à localStorage, sinon préférence système
-    if (storedTheme !== null) {
-      return storedTheme === "dark";
-    }
-    return prefersDarkMode;
-  });
+  // Dérive isDarkMode de storedTheme et prefersDarkMode
+  // Plus besoin d'état séparé ni d'effet de synchronisation
+  const isDarkMode =
+    storedTheme !== null ? storedTheme === "dark" : prefersDarkMode;
 
   // Applique le thème au DOM (classe 'dark' sur <html>)
   useEffect(() => {
@@ -45,32 +41,21 @@ export const useDarkMode = () => {
     }
   }, [isDarkMode]);
 
-  // Met à jour le thème quand la préférence système change
-  // (seulement si l'utilisateur n'a pas défini de préférence manuelle)
-  useEffect(() => {
-    if (storedTheme === null) {
-      setIsDarkMode(prefersDarkMode);
-    }
-  }, [prefersDarkMode, storedTheme]);
-
   // Toggle entre dark et light mode
   const toggleDarkMode = useCallback(() => {
-    setIsDarkMode((prev) => {
-      const newValue = !prev;
-      setStoredTheme(newValue ? "dark" : "light");
-      return newValue;
+    setStoredTheme((prev) => {
+      const currentValue = prev !== null ? prev === "dark" : prefersDarkMode;
+      return currentValue ? "light" : "dark";
     });
-  }, [setStoredTheme]);
+  }, [prefersDarkMode, setStoredTheme]);
 
   // Active explicitement le dark mode
   const enableDark = useCallback(() => {
-    setIsDarkMode(true);
     setStoredTheme("dark");
   }, [setStoredTheme]);
 
   // Désactive explicitement le dark mode
   const disableDark = useCallback(() => {
-    setIsDarkMode(false);
     setStoredTheme("light");
   }, [setStoredTheme]);
 

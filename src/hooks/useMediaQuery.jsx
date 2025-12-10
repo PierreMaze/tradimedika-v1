@@ -1,42 +1,30 @@
 // hooks/useMediaQuery.js
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 /**
  * Hook pour détecter les media queries CSS
  * Compatible SSR (ne plante pas côté serveur)
+ * Utilise useSyncExternalStore pour une synchronisation optimale
  *
  * @param {string} query - Media query CSS (ex: '(prefers-color-scheme: dark)')
  * @returns {boolean} - true si la media query correspond
  */
 export function useMediaQuery(query) {
-  // Initialisation safe pour SSR
-  const [matches, setMatches] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return window.matchMedia(query).matches;
-  });
-
-  useEffect(() => {
+  const subscribe = (callback) => {
     // Protection SSR
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined") return () => {};
 
     const mediaQuery = window.matchMedia(query);
+    mediaQuery.addEventListener("change", callback);
+    return () => mediaQuery.removeEventListener("change", callback);
+  };
 
-    // Handler pour les changements
-    const handleChange = (event) => {
-      setMatches(event.matches);
-    };
+  const getSnapshot = () => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia(query).matches;
+  };
 
-    // Initialise la valeur
-    setMatches(mediaQuery.matches);
+  const getServerSnapshot = () => false;
 
-    // Écoute les changements
-    mediaQuery.addEventListener("change", handleChange);
-
-    // Cleanup
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, [query]);
-
-  return matches;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

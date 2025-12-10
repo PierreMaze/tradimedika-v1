@@ -1,7 +1,7 @@
 // tradimedika/src/components/symptoms/SymptomsSelector.jsx
 import { AnimatePresence, motion } from "framer-motion";
 import PropTypes from "prop-types";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMdWarning } from "react-icons/io";
 import symptomsData from "../../data/symptomList.json";
@@ -40,9 +40,9 @@ const findMainSymptomsFromSynonym = (searchTerm) => {
 const isSymptomOrSynonymSelected = (symptom, selectedSymptoms) => {
   const synonymGroup = getSynonymGroup(symptom);
   return synonymGroup.some((s) =>
-    selectedSymptoms.some((selected) =>
-      normalizeForMatching(s) === normalizeForMatching(selected)
-    )
+    selectedSymptoms.some(
+      (selected) => normalizeForMatching(s) === normalizeForMatching(selected),
+    ),
   );
 };
 
@@ -54,9 +54,8 @@ export default function SymptomsSelector({
   onSubmit,
 }) {
   const [inputValue, setInputValue] = useState("");
-  const [filteredSymptoms, setFilteredSymptoms] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [isForcedClosed, setIsForcedClosed] = useState(false); // Pour gérer la fermeture manuelle
   const inputRef = useRef(null);
   const listRef = useRef(null);
 
@@ -78,14 +77,12 @@ export default function SymptomsSelector({
   }, []);
 
   // Filtrage en temps réel avec matching flexible (avec/sans accents)
+  // Dérivé via useMemo pour éviter les setState synchrones dans les effets
   // Exclut les symptômes déjà sélectionnés ET leurs synonymes
   // Propose UNIQUEMENT les symptômes principaux (clés de synonymsData), jamais les synonymes
-  useEffect(() => {
+  const filteredSymptoms = useMemo(() => {
     if (inputValue.trim() === "") {
-      setFilteredSymptoms([]);
-      setIsOpen(false);
-      setSelectedIndex(-1);
-      return;
+      return [];
     }
 
     // Normaliser l'input pour matching flexible (sans accents)
@@ -100,7 +97,11 @@ export default function SymptomsSelector({
 
     const directMatches = symptomsData.filter((symptom) => {
       // Ne pas inclure si c'est un synonyme (valeur dans synonymsData)
-      if (allSynonymValues.some(syn => normalizeForMatching(syn) === normalizeForMatching(symptom))) {
+      if (
+        allSynonymValues.some(
+          (syn) => normalizeForMatching(syn) === normalizeForMatching(symptom),
+        )
+      ) {
         return false;
       }
       // Inclure si le symptom matche l'input
@@ -109,10 +110,10 @@ export default function SymptomsSelector({
 
     // 3. Séparer exact matches et partial matches (seulement pour directMatches)
     const exactMatches = directMatches.filter(
-      (symptom) => normalizeForMatching(symptom) === normalizedInput
+      (symptom) => normalizeForMatching(symptom) === normalizedInput,
     );
     const partialMatches = directMatches.filter(
-      (symptom) => normalizeForMatching(symptom) !== normalizedInput
+      (symptom) => normalizeForMatching(symptom) !== normalizedInput,
     );
 
     // 4. Combiner dans l'ordre : synonymes → exact → partial
@@ -126,18 +127,27 @@ export default function SymptomsSelector({
     // 5. Dédupliquer et filtrer les symptômes déjà sélectionnés
     const uniqueResults = [...new Set(combinedResults)];
     const filtered = uniqueResults
-      .filter((symptom) => !isSymptomOrSynonymSelected(symptom, selectedSymptoms))
+      .filter(
+        (symptom) => !isSymptomOrSynonymSelected(symptom, selectedSymptoms),
+      )
       .slice(0, 10); // Limite de 10 appliquée APRÈS combinaison
 
-    setFilteredSymptoms(filtered);
-    setIsOpen(filtered.length > 0);
-    setSelectedIndex(-1);
+    return filtered;
   }, [inputValue, selectedSymptoms]);
+
+  // Dérive isOpen du nombre de résultats filtrés et de l'état de fermeture forcée
+  const isOpen = !isForcedClosed && filteredSymptoms.length > 0 && inputValue.trim() !== "";
+
+  // Réinitialise selectedIndex et réouvre le dropdown quand inputValue change
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Réinitialisation intentionnelle de l'état UI
+    setSelectedIndex(-1);
+    setIsForcedClosed(false); // Réouvre le dropdown quand l'utilisateur tape
+  }, [inputValue]);
 
   // Gestion de la sélection d'un symptôme
   const handleSelectSymptom = (symptom) => {
-    setInputValue(""); // Efface l'input après sélection (comportement B)
-    setIsOpen(false);
+    setInputValue(""); // Efface l'input après sélection (comportement B) - isOpen se met à jour automatiquement
     setSelectedIndex(-1);
     if (onSymptomSelect) {
       onSymptomSelect(symptom);
@@ -162,8 +172,7 @@ export default function SymptomsSelector({
 
     if (!isOpen || filteredSymptoms.length === 0) {
       if (e.key === "Escape") {
-        setInputValue("");
-        setIsOpen(false);
+        setInputValue(""); // isOpen se met à jour automatiquement
       }
       return;
     }
@@ -197,13 +206,12 @@ export default function SymptomsSelector({
 
       case "Escape":
         e.preventDefault();
-        setIsOpen(false);
         setSelectedIndex(-1);
-        setInputValue("");
+        setInputValue(""); // isOpen se met à jour automatiquement
         break;
 
       case "Tab":
-        setIsOpen(false);
+        // isOpen se fermera automatiquement si inputValue est vide
         setSelectedIndex(-1);
         break;
 
@@ -234,7 +242,7 @@ export default function SymptomsSelector({
         listRef.current &&
         !listRef.current.contains(event.target)
       ) {
-        setIsOpen(false);
+        setIsForcedClosed(true); // Ferme le dropdown manuellement
         setSelectedIndex(-1);
       }
     };
@@ -253,6 +261,7 @@ export default function SymptomsSelector({
         <input
           ref={inputRef}
           type="text"
+          name="symptoms"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}

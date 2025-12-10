@@ -132,7 +132,7 @@ function SymptomsSection() {
                   ⚠️ Aucun remède trouvé
                 </p>
                 <p className="mt-1 text-sm text-neutral-600 transition duration-300 ease-in-out dark:text-neutral-400">
-                  Essayez d'autres symptômes ou reformulez votre recherche
+                  Essayez d&apos;autres symptômes ou reformulez votre recherche
                 </p>
               </div>
             )}

@@ -37,7 +37,7 @@ const synonyms = JSON.parse(readFileSync(PATHS.synonyms, "utf-8"));
 const db = JSON.parse(readFileSync(PATHS.db, "utf-8"));
 
 let errors = 0;
-let warnings = 0;
+const warnings = 0;
 
 // ==================== 1. VÉRIFIER ACCENTS FRANÇAIS VALIDES ====================
 
