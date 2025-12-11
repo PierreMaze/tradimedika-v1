@@ -330,7 +330,7 @@ function RemedyResultDetails() {
           to="/remedes"
           state={{ symptoms: selectedSymptoms }}
           aria-label="Retour aux résultats"
-          className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:bg-emerald-700 hover:shadow-lg focus:ring-2 focus:ring-emerald-300 focus:outline-none"
+          className="inline-flex justify-center items-center gap-2 rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:bg-emerald-700 hover:shadow-lg focus:ring-2 focus:ring-emerald-300 focus:outline-none"
         >
           <HiArrowLeft className="h-5 w-5" aria-hidden="true" />
           Retour aux résultats
