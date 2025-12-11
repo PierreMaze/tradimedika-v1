@@ -124,7 +124,7 @@ function RemedyResultDetails() {
           </p>
         </div>
       </motion.div>
-
+<div  className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6">
       {/* Propriétés Section */}
       {remedy.properties && remedy.properties.length > 0 && (
         <motion.section
@@ -178,7 +178,7 @@ function RemedyResultDetails() {
           </div>
         </motion.section>
       )}
-
+</div>
       {/* Utilisations Section */}
       {remedy.uses && remedy.uses.length > 0 && (
         <motion.section
