@@ -163,7 +163,7 @@ function BadgeInfoTooltip() {
             {/* Liste des badges */}
             <div className="space-y-6">
               {/* Badge Vérifié */}
-              <div className="flex items-start gap-2 lg:gap-4 flex-col lg:flex-row">
+              <div className="flex items-start lg:items-center gap-2 lg:gap-4 flex-col lg:flex-row">
                 <VerifiedBadge />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède a été confirmé comme sûr, <span className="text-emerald-600 dark:text-emerald-500 font-medium">vérifier les
@@ -172,7 +172,7 @@ function BadgeInfoTooltip() {
               </div>
 
               {/* Badge Grossesse OK */}
-              <div className="flex items-start gap-2 lg:gap-4 flex-col lg:flex-row">
+              <div className="flex items-start lg:items-center gap-2 lg:gap-4 flex-col lg:flex-row">
                 <PregnancyBadge variant="default" />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède peut être utilisé sans danger pendant la grossesse.
@@ -180,7 +180,7 @@ function BadgeInfoTooltip() {
               </div>
 
               {/* Badge Enfants X+ ans */}
-              <div className="flex items-start gap-2 lg:gap-4 flex-col lg:flex-row">
+              <div className="flex items-start lg:items-center gap-2 lg:gap-4 flex-col lg:flex-row">
                 <ChildrenAgeBadge age={"X"} />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède est adapté aux enfants de plus de X ans.
