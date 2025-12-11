@@ -71,7 +71,7 @@ export default function RemedyCard({ remedy, selectedSymptoms }) {
                 {name}
               </h3>
               <span
-                className={`shrink-0 rounded-md px-2 py-1 text-xs font-semibold tracking-wide uppercase ${typeStyles[type] || typeStyles.aliment}`}
+                className={`shrink-0 rounded-md px-2 py-1 text-xs lg:text-sm font-semibold tracking-wide uppercase text-black bg-neutral-200 dark:text-white dark:bg-neutral-600 `}
               >
                 {type}
               </span>
@@ -88,7 +88,7 @@ export default function RemedyCard({ remedy, selectedSymptoms }) {
                 {properties.slice(0, 3).map((prop, index) => (
                   <span
                     key={index}
-                    className="inline-flex items-center gap-1 rounded-md bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
+                    className="inline-flex lg:text-sm items-center gap-1 rounded-md bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
                   >
                     {capitalizeFirstLetter(prop.name, true)}
                   </span>
