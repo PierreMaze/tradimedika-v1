@@ -2,7 +2,7 @@
 
 ---
 
-## [0.11.1] - 2025-12-11
+## [0.18.0] - 2025-12-11
 
 ### <u>add:</u>
 
@@ -16,8 +16,8 @@
 - Updated `src/components/navigation/BreadCrumb.jsx` to use `formatSegmentLabel()` for better label display
 - Updated `segmentToLabel()` function with 3-level priority system (remedy name > static labels > formatted segment)
 - Updated JSDoc documentation in `getRemedyBySlug()` to reflect new URI decoding behavior
-- Updated `package.json` version from `0.11.0` to `0.11.1`
-- Updated `README.md` version badge from `0.11.0` to `0.11.1`
+- Updated `package.json` version from `0.17.0` to `0.18.0`
+- Updated `README.md` version badge from `0.17.0` to `0.18.0`
 - Updated `ARCHITECTURE.md` to include `formatSegmentLabel` in utils section
 
 ### <u>fix:</u>
@@ -59,7 +59,7 @@
 
 ---
 
-## [0.11.0] - 2025-12-11
+## [0.17.0] - 2025-12-11
 
 ### <u>add:</u>
 
@@ -75,8 +75,8 @@
 - Updated router configuration to include `basename` and `future` flags in `createBrowserRouter()` options
 - Updated `src/layout/LayoutApp.jsx` to import `ScrollRestoration` from `react-router-dom`
 - Updated route structure from JSX `<Route>` elements to object-based route configuration
-- Updated `package.json` version from `0.10.0` to `0.11.0`
-- Updated `README.md` version badge from `0.10.0` to `0.11.0`
+- Updated `package.json` version from `0.16.0` to `0.17.0`
+- Updated `README.md` version badge from `0.16.0` to `0.17.0`
 
 ### <u>delete:</u>
 
@@ -120,7 +120,7 @@
 
 ---
 
-## [0.10.0] - 2025-12-11
+## [0.16.0] - 2025-12-11
 
 ### <u>add:</u>
 
@@ -159,7 +159,7 @@
 
 ---
 
-## [0.9.1] - 2025-12-11
+## [0.15.0] - 2025-12-11
 
 ### <u>add:</u>
 
@@ -186,7 +186,7 @@
 - Updated `BreadCrumbItem` function signature to accept `selectedSymptoms` prop
 - Updated `FilterTag.jsx`, `ListFilterTag.jsx`, `Hero.jsx`, and `SymptomTag.jsx` to use buttonStyles constant
 - Updated PropTypes for `RemedyResultList`, `RemedyCard`, and `BreadCrumbItem` to include `selectedSymptoms` validation
-- Updated `package.json` version from `0.9.0` to `0.9.1`
+- Updated `package.json` version from `0.14.0` to `0.15.0`
 
 ### <u>refactor:</u>
 
@@ -231,7 +231,7 @@
 
 ---
 
-## [0.9.0] - 2025-12-10
+## [0.14.0] - 2025-12-10
 
 ### <u>add:</u>
 
@@ -261,8 +261,8 @@
 - Updated `RemedyCard.jsx` to generate navigation links with slugs using `generateSlug(name)`
 - Updated all internal links from `/remedies` to `/remedes` in `RemedyResultDetails.jsx`
 - Updated `BreadCrumb.jsx` labels mapping to support `/remedes` route
-- Updated `package.json` version from `0.8.0` to `0.9.0`
-- Updated `README.md` version badge from `0.8.0` to `0.9.0`
+- Updated `package.json` version from `0.13.0` to `0.14.0`
+- Updated `README.md` version badge from `0.13.0` to `0.14.0`
 
 ### <u>refactor:</u>
 
@@ -292,7 +292,7 @@
 
 ---
 
-## [0.8.1] - 2025-12-10
+## [0.13.0] - 2025-12-10
 
 ### <u>documentation:</u>
 
@@ -304,14 +304,14 @@
 ### <u>validation:</u>
 
 - Validated acceptance criteria for Issue #44:
-  - ✅ State management for selected tags (FilterRemedyResult.jsx line 46)
-  - ✅ Pass tag state to RemedyResultList (RemedyResult.jsx lines 41, 82)
-  - ✅ "Tous" tag resets filters (FilterRemedyResult.jsx line 55)
-  - ✅ Intersection-based filtering (lines 57-62)
-  - ✅ Show RemedyResultNotFound on no match (RemedyResultList.jsx line 21)
-  - ✅ Dynamic updates without reload (useEffect pattern line 65)
-  - ✅ Responsive mobile-first design (Grid breakpoints in RemedyResultList)
-  - ✅ Compatible with LayoutRemedyResult and BreadCrumb
+  - State management for selected tags (FilterRemedyResult.jsx line 46)
+  - Pass tag state to RemedyResultList (RemedyResult.jsx lines 41, 82)
+  - "Tous" tag resets filters (FilterRemedyResult.jsx line 55)
+  - Intersection-based filtering (lines 57-62)
+  - Show RemedyResultNotFound on no match (RemedyResultList.jsx line 21)
+  - Dynamic updates without reload (useEffect pattern line 65)
+  - Responsive mobile-first design (Grid breakpoints in RemedyResultList)
+  - Compatible with LayoutRemedyResult and BreadCrumb
 - Confirmed all components follow React best practices from CLAUDE.md
 - Verified dark mode support across all filter components
 - Confirmed ARIA accessibility attributes present
@@ -337,7 +337,7 @@
 
 ---
 
-## [0.8.0] - 2025-12-10
+## [0.12.0] - 2025-12-10
 
 ### <u>add:</u>
 
@@ -367,8 +367,8 @@
 - Updated `RemedyResult.jsx` JSDoc comments to reflect implementation completion
 - Updated result counter to only display when filtered remedies exist
 - Updated filter display logic to conditionally render based on matched remedies
-- Updated `README.md` version badge from `0.7.0` to `0.8.0`
-- Updated `package.json` version from `0.7.0` to `0.8.0`
+- Updated `README.md` version badge from `0.11.0` to `0.12.0`
+- Updated `package.json` version from `0.11.0` to `0.12.0`
 
 ### <u>remove:</u>
 
@@ -424,7 +424,7 @@
 
 ---
 
-## [0.7.0] - 2025-12-10
+## [0.11.0] - 2025-12-10
 
 ### <u>add:</u>
 
@@ -451,8 +451,8 @@
 - Updated `RemedyResult.jsx` to display matched remedies count and detailed remedy cards
 - Updated `RemedyResult.jsx` to show symptom badges in remedy cards with match count
 - Updated `ARCHITECTURE.md` to include `filter/` folder in components structure
-- Updated `README.md` version badge from `0.6.0` to `0.7.0`
-- Updated `package.json` version from `0.6.0` to `0.7.0`
+- Updated `README.md` version badge from `0.10.0` to `0.11.0`
+- Updated `package.json` version from `0.10.0` to `0.11.0`
 
 ### <u>refactor:</u>
 
@@ -495,7 +495,7 @@
 
 ---
 
-## [0.6.0] - 2025-12-10
+## [0.10.0] - 2025-12-10
 
 ### <u>add:</u>
 
@@ -514,8 +514,8 @@
 
 - Updated `src/layout/LayoutRemedyResult.jsx` to integrate `<BreadCrumb />` component above `<Outlet />`
 - Updated `ARCHITECTURE.md` to include `navigation/` folder in components structure
-- Updated `README.md` version badge from `0.5.0` to `0.6.0`
-- Updated `package.json` version from `0.5.0` to `0.6.0`
+- Updated `README.md` version badge from `0.9.0` to `0.10.0`
+- Updated `package.json` version from `0.9.0` to `0.10.0`
 
 ### <u>refactor:</u>
 
@@ -547,7 +547,7 @@
 
 ---
 
-## [0.5.0] - 2025-12-10
+## [0.9.0] - 2025-12-10
 
 ### <u>add:</u>
 
@@ -568,10 +568,9 @@
 
 ### <u>update:</u>
 
-- Updated `package.json` to downgrade `react-router-dom` from `^7.9.6` to `6.30.2` for compatibility
 - Updated `src/App.jsx` to use `<Router />` component instead of direct `<Hero />` rendering
 - Updated `src/main.jsx` to wrap application with `<BrowserRouter>` for routing support
-- Updated `README.md` version badge from `0.4.1` to `0.5.0`
+- Updated `README.md` version badge from `0.8.1` to `0.9.0`
 - Updated `ARCHITECTURE.md` to include new `pages/`, `routes/`, and expanded `layout/` directories
 
 ### <u>refactor:</u>
@@ -614,7 +613,7 @@
 
 ---
 
-## [0.4.1] - 2025-12-09
+## [0.8.1] - 2025-12-09
 
 ### <u>add:</u>
 
@@ -645,7 +644,7 @@
 
 ---
 
-## [0.4.0] - 2025-12-09
+## [0.8.0] - 2025-12-09
 
 ### <u>add:</u>
 
@@ -678,7 +677,7 @@
 
 ---
 
-## [0.3.3] - 2025-12-09
+## [0.7.0] - 2025-12-09
 
 ### <u>add:</u>
 
@@ -736,7 +735,7 @@
 
 ---
 
-## [0.3.2] - 2025-12-07
+## [0.6.1] - 2025-12-07
 
 ### <u>fix:</u>
 
@@ -756,7 +755,7 @@
 
 ---
 
-## [0.3.1] - 2025-12-07
+## [0.6.0] - 2025-12-07
 
 ### <u>add:</u>
 
@@ -823,7 +822,7 @@
 
 ---
 
-## [0.3.0] - 2025-12-06
+## [0.5.0] - 2025-12-06
 
 ### <u>add:</u>
 
@@ -875,7 +874,7 @@
 
 ---
 
-## [0.2.0] - 2025-12-06
+## [0.4.0] - 2025-12-06
 
 ### <u>refactor:</u>
 
@@ -923,7 +922,7 @@
 
 ---
 
-## [0.1.7] - 2025-12-05
+## [0.3.0] - 2025-12-05
 
 ### <u>add:</u>
 
@@ -963,7 +962,7 @@
 
 ---
 
-## [0.1.6] - 2025-12-03
+## [0.2.3] - 2025-12-03
 
 ### <u>add:</u>
 
@@ -974,7 +973,7 @@
 
 ---
 
-## [0.1.5] - 2025-12-02
+## [0.2.2] - 2025-12-02
 
 ### <u>refactor:</u>
 
@@ -1002,7 +1001,7 @@
 
 ---
 
-## [0.1.4] - 2025-12-01
+## [0.2.1] - 2025-12-01
 
 ### <u>fix:</u>
 
@@ -1031,7 +1030,7 @@
 
 ---
 
-## [0.1.3] - 2025-11-28
+## [0.2.0] - 2025-11-28
 
 ### <u>fix:</u>
 
