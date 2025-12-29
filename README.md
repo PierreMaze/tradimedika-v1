@@ -8,11 +8,14 @@
 [![React Icons](https://img.shields.io/badge/React%20Icons-5.5.0-FF0000?style=for-the-badge&logo=react&logoColor=red)](https://react-icons.github.io/react-icons/)
 [![Vite](https://img.shields.io/badge/Vite-7.2.4-FFD700?style=for-the-badge&logo=vite&logoColor=yellow)](https://vite.dev/)
 
+[![CI](https://github.com/PierreMaze/tradimedika/actions/workflows/ci.yml/badge.svg)](https://github.com/PierreMaze/tradimedika/actions/workflows/ci.yml)
+[![Deploy](https://github.com/PierreMaze/tradimedika/actions/workflows/deploy.yml/badge.svg)](https://github.com/PierreMaze/tradimedika/actions/workflows/deploy.yml)
+
 **Un Site web moderne et performant développé avec React, TailwindCSS et Framer Motion**
 
 [🌐 **Voir le site**](https://pierremaze.github.io/tradimedika/) • [🐛 **Signaler un bug**](https://github.com/PierreMaze/) • [💬 **Discuter**](https://www.linkedin.com/in/pierremazelaygue/)
 
-[![TRADIMEDIKA](<https://img.shields.io/badge/TRADIMEDIKA-Bêta(0.26.0)-1a1a1a?style=for-the-badge&logo=leaflet&logoColor=00bd7e>)](https://pierremaze.github.io/tradimedika/)
+[![TRADIMEDIKA](<https://img.shields.io/badge/TRADIMEDIKA-Bêta(0.27.0)-1a1a1a?style=for-the-badge&logo=leaflet&logoColor=00bd7e>)](https://pierremaze.github.io/tradimedika/)
 
 </div>
 

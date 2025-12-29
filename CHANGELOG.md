@@ -2,6 +2,82 @@
 
 ---
 
+## [0.27.0] - 2025-12-29
+
+### <u>add:</u>
+
+- Added `.github/workflows/ci.yml` workflow for continuous integration
+- Added `.github/workflows/deploy.yml` workflow for automatic deployment to GitHub Pages
+- Added ESLint check in CI pipeline
+- Added unit tests execution in CI pipeline with coverage report
+- Added build verification in CI pipeline
+- Added data validation check in CI pipeline
+- Added Codecov integration for code coverage tracking
+- Added CI and Deploy status badges in README.md
+- Added automatic deployment on push to main branch
+
+### <u>update:</u>
+
+- Updated `package.json` version from `0.26.0` to `0.27.0`
+- Updated `README.md` version badge from `0.26.0` to `0.27.0`
+- Updated `README.md` with CI and Deploy GitHub Actions badges
+
+### <u>ci/cd:</u>
+
+- Configured GitHub Actions CI workflow to run on push and pull requests to main/dev
+- Configured automatic linting, testing, and building on every commit
+- Configured code coverage upload to Codecov
+- Configured automatic deployment to GitHub Pages on main branch push
+- Set up pnpm caching for faster CI builds
+- Established frozen lockfile installation for reproducible builds
+
+### <u>automation:</u>
+
+- Automated ESLint checks preventing code style violations
+- Automated unit tests ensuring code quality before merge
+- Automated build verification catching compilation errors early
+- Automated data integrity validation with validate-data script
+- Automated deployment eliminating manual deployment steps
+- Automated coverage reporting for test quality tracking
+
+### <u>features:</u>
+
+- **Continuous Integration**: Automatic code quality checks on every PR
+- **Automated Testing**: Tests run automatically with coverage reporting
+- **Automated Deployment**: Push to main triggers automatic GitHub Pages deployment
+- **Build Verification**: Ensures code compiles before allowing merge
+- **Code Coverage**: Codecov integration tracking test coverage over time
+- **Status Badges**: Real-time CI/CD status visible in README
+
+### <u>devops:</u>
+
+- **CI Pipeline Steps**:
+  1. Checkout code
+  2. Setup pnpm and Node.js 20
+  3. Install dependencies (frozen lockfile)
+  4. Run ESLint
+  5. Run tests with coverage
+  6. Upload coverage to Codecov
+  7. Build application
+  8. Validate data integrity
+
+- **Deploy Pipeline Steps**:
+  1. Checkout code
+  2. Setup pnpm and Node.js 20
+  3. Install dependencies (frozen lockfile)
+  4. Build application
+  5. Deploy to GitHub Pages
+
+### <u>issues resolved:</u>
+
+- GitHub Issue #68: CI/CD avec GitHub Actions
+- Implemented continuous integration with automated testing and linting
+- Implemented continuous deployment to GitHub Pages
+- Eliminated manual deployment process
+- Established code quality gates before merge
+
+---
+
 ## [0.26.0] - 2025-12-29
 
 ### <u>add:</u>
