@@ -1,6 +1,6 @@
 // tradimedika-v1/src/pages/RemedyResult.jsx
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
@@ -57,21 +57,34 @@ function RemedyResult() {
   // État uniquement pour les remèdes filtrés par les tags
   const [filteredRemedies, setFilteredRemedies] = useState(matchedRemedies);
 
-  // Generate dynamic meta tags
-  const pageTitle =
-    selectedSymptoms.length > 0
-      ? `Remèdes pour ${selectedSymptoms.join(", ")} - TRADIMEDIKA`
-      : "Résultats des remèdes - TRADIMEDIKA";
+  // useCallback pour éviter re-renders en cascade dans FilterRemedyResult
+  const handleFilterChange = useCallback((remedies) => {
+    setFilteredRemedies(remedies);
+  }, []);
 
-  const pageDescription =
-    matchedRemedies.length > 0
-      ? `${matchedRemedies.length} remède${matchedRemedies.length > 1 ? "s" : ""} naturel${matchedRemedies.length > 1 ? "s" : ""} trouvé${matchedRemedies.length > 1 ? "s" : ""} pour ${selectedSymptoms.join(", ")}`
-      : `Recherche de remèdes naturels pour ${selectedSymptoms.join(", ")}`;
+  // Generate dynamic meta tags (memoizé pour optimisation)
+  const { pageTitle, pageDescription, canonicalUrl } = useMemo(() => {
+    const title =
+      selectedSymptoms.length > 0
+        ? `Remèdes pour ${selectedSymptoms.join(", ")} - TRADIMEDIKA`
+        : "Résultats des remèdes - TRADIMEDIKA";
 
-  const canonicalUrl =
-    selectedSymptoms.length > 0
-      ? `https://pierremaze.github.io/tradimedika/remedes?symptoms=${encodeURIComponent(selectedSymptoms.join(","))}`
-      : "https://pierremaze.github.io/tradimedika/remedes";
+    const description =
+      matchedRemedies.length > 0
+        ? `${matchedRemedies.length} remède${matchedRemedies.length > 1 ? "s" : ""} naturel${matchedRemedies.length > 1 ? "s" : ""} trouvé${matchedRemedies.length > 1 ? "s" : ""} pour ${selectedSymptoms.join(", ")}`
+        : `Recherche de remèdes naturels pour ${selectedSymptoms.join(", ")}`;
+
+    const canonical =
+      selectedSymptoms.length > 0
+        ? `https://pierremaze.github.io/tradimedika/remedes?symptoms=${encodeURIComponent(selectedSymptoms.join(","))}`
+        : "https://pierremaze.github.io/tradimedika/remedes";
+
+    return {
+      pageTitle: title,
+      pageDescription: description,
+      canonicalUrl: canonical,
+    };
+  }, [selectedSymptoms, matchedRemedies.length]);
 
   return (
     <>
@@ -142,7 +155,7 @@ function RemedyResult() {
           <FilterRemedyResult
             key={selectedSymptoms.join("-")}
             matchedRemedies={matchedRemedies}
-            onFilterChange={setFilteredRemedies}
+            onFilterChange={handleFilterChange}
           />
         )}
 
