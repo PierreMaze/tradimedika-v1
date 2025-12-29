@@ -160,8 +160,14 @@ function RemedyResult() {
         )}
 
         {/* Compteur de résultats (seulement si des remèdes sont affichés après filtrage) */}
+        {/* aria-live pour annoncer les changements aux lecteurs d'écran */}
         {filteredRemedies.length > 0 && matchedRemedies.length > 0 && (
-          <p className="mb-6 text-lg text-neutral-600 dark:text-neutral-400">
+          <p
+            className="mb-6 text-lg text-neutral-600 dark:text-neutral-400"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
             <span className="font-bold text-emerald-600 dark:text-emerald-500">
               {filteredRemedies.length}
             </span>{" "}
