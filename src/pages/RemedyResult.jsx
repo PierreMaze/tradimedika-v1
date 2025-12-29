@@ -9,6 +9,7 @@ import RemedyResultList from "../components/remedy/RemedyResultList";
 import BadgeInfoTooltip from "../components/btn/BadgeInfoTooltip";
 import db from "../data/db.json";
 import { findMatchingRemedies } from "../utils/remedyMatcher";
+import { parseAndValidateSymptoms } from "../utils/validation";
 
 /**
  * RemedyResult Page - Affiche les remèdes correspondant aux symptômes sélectionnés
@@ -35,15 +36,16 @@ function RemedyResult() {
     const symptomsParam = searchParams.get("symptoms");
 
     if (symptomsParam) {
-      // Décoder et split les symptômes depuis l'URL
-      return symptomsParam
-        .split(",")
-        .map((s) => decodeURIComponent(s.trim()))
-        .filter(Boolean);
+      // Parser et valider les symptômes (protection contre injections)
+      return parseAndValidateSymptoms(symptomsParam);
     }
 
     // 2. Fallback sur location.state (backward compatibility)
-    return location.state?.symptoms || [];
+    // Valider aussi les symptômes du state pour cohérence
+    const stateSymptoms = location.state?.symptoms || [];
+    return Array.isArray(stateSymptoms)
+      ? stateSymptoms.filter((s) => typeof s === "string" && s.trim())
+      : [];
   }, [location.search, location.state?.symptoms]);
 
   // Calcul des remèdes matchés avec useMemo pour optimisation
