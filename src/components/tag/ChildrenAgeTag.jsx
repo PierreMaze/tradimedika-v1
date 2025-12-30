@@ -1,12 +1,12 @@
-// tradimedika-v1/src/components/badge/ChildrenAgeBadge.jsx
+// tradimedika-v1/src/components/tag/ChildrenAgeTag.jsx
 
 import { MdOutlineChildCare } from "react-icons/md";
 import PropTypes from "prop-types";
 
 /**
- * ChildrenAgeBadge Component
+ * ChildrenAgeTag Component
  *
- * Badge indiquant l'âge minimum recommandé pour les enfants.
+ * Tag indiquant l'âge minimum recommandé pour les enfants.
  * Utilise MdOutlineChildCare de react-icons/hi2 pour cohérence visuelle.
  *
  * Props:
@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
  * - showLabel: Afficher le texte "Enfants X+ ans" (défaut: true)
  */
 
-function ChildrenAgeBadge({
+function ChildrenAgeTag({
   age,
   className = "",
   size = "sm",
@@ -38,11 +38,11 @@ function ChildrenAgeBadge({
   );
 }
 
-ChildrenAgeBadge.propTypes = {
+ChildrenAgeTag.propTypes = {
   age: PropTypes.number.isRequired,
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "md"]),
   showLabel: PropTypes.bool,
 };
 
-export default ChildrenAgeBadge;
+export default ChildrenAgeTag;

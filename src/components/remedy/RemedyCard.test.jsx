@@ -9,17 +9,17 @@ const renderWithRouter = (ui) => {
   return render(<BrowserRouter>{ui}</BrowserRouter>);
 };
 
-// Mock des badges pour simplifier les tests
-vi.mock("../badge/VerifiedBadge", () => ({
-  default: () => <div data-testid="verified-badge">Vérifié</div>,
+// Mock des tags pour simplifier les tests
+vi.mock("../tag/VerifiedTag", () => ({
+  default: () => <div data-testid="verified-tag">Vérifié</div>,
 }));
 
-vi.mock("../badge/PregnancyBadge", () => ({
-  default: () => <div data-testid="pregnancy-badge">Sûr grossesse</div>,
+vi.mock("../tag/PregnancyTag", () => ({
+  default: () => <div data-testid="pregnancy-tag">Sûr grossesse</div>,
 }));
 
-vi.mock("../badge/ChildrenAgeBadge", () => ({
-  default: ({ age }) => <div data-testid="children-badge">Enfants {age}+</div>,
+vi.mock("../tag/ChildrenAgeTag", () => ({
+  default: ({ age }) => <div data-testid="children-tag">Enfants {age}+</div>,
 }));
 
 describe("RemedyCard Component", () => {
@@ -147,7 +147,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyComplete} selectedSymptoms={[]} />,
       );
 
-      expect(screen.getByTestId("verified-badge")).toBeInTheDocument();
+      expect(screen.getByTestId("verified-tag")).toBeInTheDocument();
     });
 
     it("should not render verified badge when verifiedByProfessional is false", () => {
@@ -155,7 +155,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyMinimal} selectedSymptoms={[]} />,
       );
 
-      expect(screen.queryByTestId("verified-badge")).not.toBeInTheDocument();
+      expect(screen.queryByTestId("verified-tag")).not.toBeInTheDocument();
     });
 
     it("should render pregnancy badge when pregnancySafe is true", () => {
@@ -163,7 +163,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyComplete} selectedSymptoms={[]} />,
       );
 
-      expect(screen.getByTestId("pregnancy-badge")).toBeInTheDocument();
+      expect(screen.getByTestId("pregnancy-tag")).toBeInTheDocument();
     });
 
     it("should not render pregnancy badge when pregnancySafe is false", () => {
@@ -171,7 +171,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyMinimal} selectedSymptoms={[]} />,
       );
 
-      expect(screen.queryByTestId("pregnancy-badge")).not.toBeInTheDocument();
+      expect(screen.queryByTestId("pregnancy-tag")).not.toBeInTheDocument();
     });
 
     it("should render children badge when childrenAge is provided", () => {
@@ -179,7 +179,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyComplete} selectedSymptoms={[]} />,
       );
 
-      expect(screen.getByTestId("children-badge")).toBeInTheDocument();
+      expect(screen.getByTestId("children-tag")).toBeInTheDocument();
       expect(screen.getByText("Enfants 12+")).toBeInTheDocument();
     });
 
@@ -188,7 +188,7 @@ describe("RemedyCard Component", () => {
         <RemedyCard remedy={mockRemedyMinimal} selectedSymptoms={[]} />,
       );
 
-      expect(screen.queryByTestId("children-badge")).not.toBeInTheDocument();
+      expect(screen.queryByTestId("children-tag")).not.toBeInTheDocument();
     });
   });
 

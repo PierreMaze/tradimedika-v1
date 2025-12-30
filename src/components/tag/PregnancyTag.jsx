@@ -1,12 +1,12 @@
-// tradimedika-v1/src/components/badge/PregnancyBadge.jsx
+// tradimedika-v1/src/components/tag/PregnancyTag.jsx
 
 import { HiCheckBadge } from "react-icons/hi2";
 import PropTypes from "prop-types";
 
 /**
- * PregnancyBadge Component
+ * PregnancyTag Component
  *
- * Badge indiquant qu'un remède est sûr pendant la grossesse.
+ * Tag indiquant qu'un remède est sûr pendant la grossesse.
  * Utilise HiCheckBadge de react-icons/hi2 pour cohérence visuelle.
  *
  * Props:
@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
  * - showLabel: Afficher le texte (défaut: true)
  */
 
-function PregnancyBadge({
+function PregnancyTag({
   variant = "default",
   className = "",
   size = "sm",
@@ -40,11 +40,11 @@ function PregnancyBadge({
   );
 }
 
-PregnancyBadge.propTypes = {
+PregnancyTag.propTypes = {
   variant: PropTypes.oneOf(["default", "ok"]),
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "md"]),
   showLabel: PropTypes.bool,
 };
 
-export default PregnancyBadge;
+export default PregnancyTag;
