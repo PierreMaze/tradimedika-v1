@@ -1,16 +1,15 @@
 // tradimedika-v1/src/components/sections/Hero.jsx
 import { AnimatePresence, motion } from "framer-motion";
-import { Suspense, useRef, useCallback } from "react";
+import { useCallback, useRef } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { GiSprout } from "react-icons/gi";
 import { IoMdArrowForward } from "react-icons/io";
+import { BUTTON_PRIMARY_STYLES } from "../../constants/buttonStyles";
+import { useScrollOnMobileFocus } from "../../hooks/useScrollOnMobileFocus";
 import { useSymptomSubmit } from "../../hooks/useSymptomSubmit";
 import { useSymptomTags } from "../../hooks/useSymptomTags";
-import { useScrollOnMobileFocus } from "../../hooks/useScrollOnMobileFocus";
-import LeafFall from "../LeafFall";
 import SymptomsSelector from "../input/SymptomsSelector";
 import ListSymptomTag from "../tag/ListSymptomTag";
-import { BUTTON_PRIMARY_STYLES } from "../../constants/buttonStyles";
 
 /**
  * Composant wrapper pour isoler le state des symptômes
@@ -52,6 +51,7 @@ function SymptomsSection() {
         onFocus={handleInputFocus}
         placeholder="Entrez vos symptômes (ex: fatigue, digestion...)"
       />
+
       <ListSymptomTag
         symptoms={selectedSymptoms}
         onRemoveSymptom={removeSymptom}
@@ -168,16 +168,11 @@ function SymptomsSection() {
 export default function Hero() {
   return (
     <div className="container mx-auto mt-8 mb-4 flex flex-col items-center justify-center px-4">
-      {/* 🌿 Chute de plantes en arrière-plan */}
-      <Suspense fallback={null}>
-        <LeafFall />
-      </Suspense>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="z-20 flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 xl:gap-y-16 2xl:gap-y-20"
+        className="z-20 flex flex-col items-center justify-center gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-16 2xl:gap-y-20"
       >
         <div className="flex flex-col items-center gap-y-4 lg:gap-y-6 2xl:gap-y-8">
           {/* Tag "Medecine douce & naturelle" */}
@@ -186,9 +181,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="border-dark/60 text-dark flex items-center gap-2 rounded-lg border-2 bg-white px-4 py-2 shadow-md transition duration-300 ease-in-out dark:border-emerald-500/60 dark:bg-emerald-950 dark:text-emerald-500"
+              className="border-dark/60 text-dark flex items-center gap-2 rounded-lg border-2 bg-white px-4 py-2 shadow-md transition duration-300 ease-in-out dark:border-emerald-500/60 dark:bg-emerald-950 dark:text-emerald-400"
             >
-              <GiSprout className="text-lg text-emerald-600 transition duration-300 ease-in-out dark:text-emerald-500" />
+              <GiSprout className="text-lg text-emerald-600 transition duration-300 ease-in-out dark:text-emerald-400" />
               <span className="font-sans text-sm font-semibold lg:text-base 2xl:text-lg">
                 Méthode Douce & Naturelle
               </span>
