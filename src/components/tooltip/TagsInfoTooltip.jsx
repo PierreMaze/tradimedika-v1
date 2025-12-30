@@ -1,12 +1,12 @@
 // tradimedika-v1/src/components/tooltip/TagsInfoTooltip.jsx
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { GrCircleQuestion } from "react-icons/gr";
 import { HiXMark } from "react-icons/hi2";
-import VerifiedTag from "../tag/VerifiedTag";
-import PregnancyTag from "../tag/PregnancyTag";
 import ChildrenAgeTag from "../tag/ChildrenAgeTag";
+import PregnancyTag from "../tag/PregnancyTag";
+import VerifiedTag from "../tag/VerifiedTag";
 
 /**
  * TagsInfoTooltip Component
@@ -100,7 +100,7 @@ function TagsInfoTooltip() {
         onMouseLeave={handleMouseLeave}
         aria-label="Informations sur les tags"
         aria-expanded={isOpen}
-        className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white text-neutral-800 shadow-lg ring-2 ring-neutral-300 transition duration-200 hover:text-emerald-600 hover:shadow-xl hover:ring-emerald-600 focus:ring-2 focus:ring-emerald-300 focus:outline-none lg:h-16 lg:w-16 dark:bg-neutral-800 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:text-emerald-500 dark:hover:ring-emerald-500"
+        className="inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-lg bg-white text-neutral-800 shadow-lg ring-2 ring-neutral-300 transition duration-200 hover:text-emerald-600 hover:shadow-xl hover:ring-emerald-600 lg:h-16 lg:w-16 dark:bg-neutral-800 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:text-emerald-500 dark:hover:ring-emerald-500"
       >
         <GrCircleQuestion className="h-7 w-7 lg:h-9 lg:w-9" />
       </button>
