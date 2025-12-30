@@ -211,7 +211,7 @@ describe("useScrollOnMobileFocus", () => {
     const element = document.createElement("div");
 
     // Supprimer scrollIntoView pour forcer le fallback
-    delete element.scrollIntoView;
+    element.scrollIntoView = undefined;
 
     // Mock getBoundingClientRect
     element.getBoundingClientRect = vi.fn(() => ({
