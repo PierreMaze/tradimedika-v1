@@ -167,7 +167,7 @@ function SymptomsSection() {
  */
 export default function Hero() {
   return (
-    <div className="container mx-auto mt-8 mb-4 flex flex-col items-center justify-center px-4">
+    <div className="mx-auto mt-8 mb-4 flex h-screen flex-col items-center justify-center px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

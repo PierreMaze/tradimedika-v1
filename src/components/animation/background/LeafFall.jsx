@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { GiFallingLeaf } from "react-icons/gi";
-import { useReducedMotion } from "../hooks/useReducedMotion";
+import { useReducedMotion } from "../../../hooks/useReducedMotion";
 
 export default function LeafFall() {
   const [show, setShow] = useState(false);

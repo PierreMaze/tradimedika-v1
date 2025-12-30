@@ -2,6 +2,45 @@
 
 ---
 
+## [0.35.0] - 2025-12-30
+
+### <u>Added:</u>
+
+- Tests unitaires pour 7 composants additionnels
+  - `FilterTag.test.jsx` (12 tests) - Tests du composant de tag de filtre individuel
+  - `ListFilterTag.test.jsx` (14 tests) - Tests du conteneur de liste de tags de filtre
+  - `BreadCrumb.test.jsx` (14 tests) - Tests de la navigation breadcrumb avec MemoryRouter
+  - `RemedyResultNotFound.test.jsx` (18 tests) - Tests des états vides (no-results et no-filter-match)
+  - `RemedyResultList.test.jsx` (13 tests) - Tests de la grille de résultats de remèdes
+  - `ErrorFallback.test.jsx` (16 tests) - Tests du fallback d'erreur boundary avec dev mode
+  - `LoadingFallback.test.jsx` (11 tests) - Tests du spinner de chargement
+- Couverture de tests étendue : 507 tests passent avec succès
+
+### <u>Fixed:</u>
+
+- Correction des tests LeafFall.test.jsx (7 tests échouaient)
+  - Ajout de la gestion des faux timers avec `vi.useFakeTimers()`
+  - Utilisation de `act()` pour entourer `vi.runAllTimers()`
+  - Réinitialisation correcte du mock `useReducedMotion` dans les tests "Leaf Icons"
+
+### <u>Changed:</u>
+
+- Restructuration du composant LeafFall
+  - Déplacé de `src/components/LeafFall.jsx` vers `src/components/animation/background/LeafFall.jsx`
+  - Mise à jour des imports dans `LayoutApp.jsx`
+  - Organisation améliorée de l'arborescence des fichiers d'animation
+
+### <u>Tests:</u>
+
+- 98 nouveaux tests ajoutés pour les composants de filtrage, navigation et états vides
+- Tous les tests utilisent les bonnes pratiques :
+  - MemoryRouter pour les tests de routage
+  - vi.fn() pour les mocks de fonctions
+  - vi.stubEnv() pour les variables d'environnement
+  - Gestion appropriée des timers avec act()
+
+---
+
 ## [0.34.0] - 2025-12-30
 
 ### <u>Added:</u>
