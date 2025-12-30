@@ -21,12 +21,12 @@ function Disclaimer({ className = "" }) {
       role="alert"
       aria-live="polite"
     >
-      <div className="container mx-auto flex items-center justify-center gap-3 lg:gap-4">
+      <div className="container mx-auto flex items-center gap-3 lg:gap-4">
         <HiExclamationTriangle
           className="h-5 w-5 flex-shrink-0 text-emerald-700 transition duration-300 ease-in-out lg:h-6 lg:w-6 dark:text-emerald-400"
           aria-hidden="true"
         />
-        <p className="text-center text-xs font-medium text-emerald-800 transition duration-300 ease-in-out lg:text-sm dark:text-emerald-200">
+        <p className="text-xs font-medium text-emerald-800 transition duration-300 ease-in-out lg:text-sm dark:text-emerald-200">
           <span className="font-semibold">Avertissement médical :</span> Les
           informations présentées sont fournies à titre informatif et ne
           remplacent pas un avis médical professionnel. Consultez toujours un

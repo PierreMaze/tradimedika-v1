@@ -10,8 +10,10 @@ function LayoutApp() {
     <div className="bg-light dark:bg-dark relative flex h-screen flex-col items-center justify-between transition duration-300 ease-in-out">
       <LeafFall />
       <div className="relative z-10 flex h-full w-full flex-col items-center justify-between">
-        <Header />
-        <Disclaimer />
+        <div className="w-full">
+          <Header />
+          <Disclaimer />
+        </div>
         <ScrollRestoration />
         <Outlet />
         <Footer />

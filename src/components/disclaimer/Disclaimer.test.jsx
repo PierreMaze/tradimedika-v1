@@ -76,7 +76,8 @@ describe("Disclaimer", () => {
     it("should have responsive text sizing", () => {
       render(<Disclaimer />);
       const text = screen.getByText(/Les informations présentées/i);
-      expect(text).toHaveClass("text-xs", "lg:text-sm");
+      expect(text).toHaveClass("text-xs");
+      expect(text).toHaveClass("lg:text-sm");
     });
 
     it("should have dark mode classes", () => {
