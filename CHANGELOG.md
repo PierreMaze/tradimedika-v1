@@ -2,6 +2,72 @@
 
 ---
 
+## [0.29.0] - 2025-12-30
+
+### <u>refactoring:</u>
+
+- Renamed `components/badge/` folder to `components/tag/` for better semantic clarity and consistency
+- Renamed Badge components to Tag components:
+  - `VerifiedBadge` → `VerifiedTag`
+  - `PregnancyBadge` → `PregnancyTag`
+  - `ChildrenAgeBadge` → `ChildrenAgeTag`
+- Updated all imports across 3 files (9 total imports):
+  - `src/pages/RemedyResultDetails.jsx`
+  - `src/components/btn/BadgeInfoTooltip.jsx`
+  - `src/components/remedy/RemedyCard.jsx`
+- Updated component mocks in `RemedyCard.test.jsx` to use new Tag paths and naming
+
+### <u>add:</u>
+
+- Added comprehensive unit tests for all Tag components in `components/tag/`:
+  - `VerifiedTag.test.jsx` - 15 tests (rendering, size, showLabel, accessibility)
+  - `PregnancyTag.test.jsx` - 21 tests (rendering, variant, size, showLabel, accessibility, combined props)
+  - `ChildrenAgeTag.test.jsx` - 22 tests (rendering, age display, size, showLabel, accessibility, multiple instances)
+  - `SymptomTag.test.jsx` - 23 tests (rendering, capitalization, interaction, accessibility, styling)
+  - `ListSymptomTag.test.jsx` - 23 tests (rendering, interaction, empty state, styling, accessibility, edge cases)
+- Total: 104 new tests added for Tag components
+- Test coverage includes: props validation, user interactions (click, keyboard), accessibility (ARIA labels), responsive behavior, and edge cases
+
+### <u>tests:</u>
+
+- All 306 tests passing (16 test files)
+- Added 104 new comprehensive unit tests for Tag components
+- Test categories: rendering, props, user interaction, accessibility, edge cases
+- Uses Vitest + React Testing Library following project patterns
+- Includes async tests with `waitFor` for Framer Motion animations
+
+### <u>delete:</u>
+
+- Deleted `src/components/badge/` directory and all Badge component files:
+  - `VerifiedBadge.jsx`
+  - `PregnancyBadge.jsx`
+  - `ChildrenAgeBadge.jsx`
+- Removed deprecated Badge component files after successful migration to Tag naming convention
+
+### <u>update:</u>
+
+- Updated `package.json` version from `0.28.0` to `0.29.0`
+- Updated `README.md` version badge from `0.28.0` to `0.29.0`
+- Updated component references in JSX from Badge to Tag terminology
+- Updated aria-labels and accessibility text from "badges" to "tags"
+- Updated test data-testid values: `verified-badge` → `verified-tag`, `pregnancy-badge` → `pregnancy-tag`, `children-badge` → `children-tag`
+
+### <u>standardization:</u>
+
+- Standardized component terminology: using "Tag" instead of "Badge" throughout the codebase
+- Unified all tag-related components under `components/tag/` directory
+- Established consistent test structure across all Tag components
+- Improved semantic clarity: Tag components now grouped with SymptomTag and ListSymptomTag
+
+### <u>features:</u>
+
+- **Component Migration**: Clean migration from Badge to Tag terminology with zero breaking changes
+- **Test Coverage**: Comprehensive test suite ensuring all Tag components work correctly
+- **Backward Compatibility**: All props and component APIs preserved during migration
+- **Maintained Functionality**: All styling, animations, and behaviors unchanged
+
+---
+
 ## [0.28.0] - 2025-12-30
 
 ### <u>security:</u>

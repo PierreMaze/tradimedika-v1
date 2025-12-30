@@ -10,9 +10,9 @@ import {
 } from "react-icons/hi2";
 import RemedyResultNotFound from "../components/remedy/RemedyResultNotFound";
 import BadgeInfoTooltip from "../components/btn/BadgeInfoTooltip";
-import VerifiedBadge from "../components/badge/VerifiedBadge";
-import PregnancyBadge from "../components/badge/PregnancyBadge";
-import ChildrenAgeBadge from "../components/badge/ChildrenAgeBadge";
+import VerifiedTag from "../components/tag/VerifiedTag";
+import PregnancyTag from "../components/tag/PregnancyTag";
+import ChildrenAgeTag from "../components/tag/ChildrenAgeTag";
 import db from "../data/db.json";
 import { capitalizeFirstLetter } from "../utils/capitalizeFirstLetter";
 import { getRemedyBySlug } from "../utils/remedyMatcher";
@@ -130,15 +130,15 @@ function RemedyResultDetails() {
                 {remedy.type}
               </span>
 
-              {/* Verified Badge */}
-              {remedy.verifiedByProfessional && <VerifiedBadge />}
+              {/* Verified Tag */}
+              {remedy.verifiedByProfessional && <VerifiedTag />}
 
-              {/* Pregnancy Safe Badge */}
-              {remedy.pregnancySafe === true && <PregnancyBadge />}
+              {/* Pregnancy Safe Tag */}
+              {remedy.pregnancySafe === true && <PregnancyTag />}
 
-              {/* Children Age Badge */}
+              {/* Children Age Tag */}
               {remedy.childrenAge !== null && (
-                <ChildrenAgeBadge age={remedy.childrenAge} />
+                <ChildrenAgeTag age={remedy.childrenAge} />
               )}
             </div>
 

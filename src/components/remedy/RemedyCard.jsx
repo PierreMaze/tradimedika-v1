@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
 import { generateSlug } from "../../utils/remedyMatcher";
-import VerifiedBadge from "../badge/VerifiedBadge";
-import PregnancyBadge from "../badge/PregnancyBadge";
-import ChildrenAgeBadge from "../badge/ChildrenAgeBadge";
+import VerifiedTag from "../tag/VerifiedTag";
+import PregnancyTag from "../tag/PregnancyTag";
+import ChildrenAgeTag from "../tag/ChildrenAgeTag";
 /**
  * Carte individuelle pour afficher un remède
  * - Entièrement cliquable (wrapper Link vers /remedes/:slug)
@@ -93,11 +93,11 @@ function RemedyCard({ remedy, selectedSymptoms }) {
               </div>
             )}
 
-            {/* Badges de sécurité */}
+            {/* Tags de sécurité */}
             <div className="flex flex-wrap gap-2">
-              {verifiedByProfessional && <VerifiedBadge />}
-              {pregnancySafe && <PregnancyBadge variant="default" />}
-              {childrenAge !== null && <ChildrenAgeBadge age={childrenAge} />}
+              {verifiedByProfessional && <VerifiedTag />}
+              {pregnancySafe && <PregnancyTag variant="default" />}
+              {childrenAge !== null && <ChildrenAgeTag age={childrenAge} />}
             </div>
           </div>
         </div>

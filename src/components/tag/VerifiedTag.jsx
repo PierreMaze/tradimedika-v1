@@ -1,12 +1,12 @@
-// tradimedika-v1/src/components/badge/VerifiedBadge.jsx
+// tradimedika-v1/src/components/tag/VerifiedTag.jsx
 
 import { HiMiniShieldCheck } from "react-icons/hi2";
 import PropTypes from "prop-types";
 
 /**
- * VerifiedBadge Component
+ * VerifiedTag Component
  *
- * Badge indiquant qu'un remède a été vérifié par un professionnel de santé.
+ * Tag indiquant qu'un remède a été vérifié par un professionnel de santé.
  * Utilise HiMiniShieldCheck de react-icons/hi2 pour cohérence visuelle.
  *
  * Props:
@@ -15,7 +15,7 @@ import PropTypes from "prop-types";
  * - showLabel: Afficher le texte "Vérifié" (défaut: true)
  */
 
-function VerifiedBadge({ className = "", size = "sm", showLabel = true }) {
+function VerifiedTag({ className = "", size = "sm", showLabel = true }) {
   const sizeClasses = {
     sm: "h-4 w-4",
     md: "h-5 w-5",
@@ -32,10 +32,10 @@ function VerifiedBadge({ className = "", size = "sm", showLabel = true }) {
   );
 }
 
-VerifiedBadge.propTypes = {
+VerifiedTag.propTypes = {
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "md"]),
   showLabel: PropTypes.bool,
 };
 
-export default VerifiedBadge;
+export default VerifiedTag;

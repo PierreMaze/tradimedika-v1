@@ -4,14 +4,14 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GrCircleQuestion } from "react-icons/gr";
 import { HiXMark } from "react-icons/hi2";
-import VerifiedBadge from "../badge/VerifiedBadge";
-import PregnancyBadge from "../badge/PregnancyBadge";
-import ChildrenAgeBadge from "../badge/ChildrenAgeBadge";
+import VerifiedTag from "../tag/VerifiedTag";
+import PregnancyTag from "../tag/PregnancyTag";
+import ChildrenAgeTag from "../tag/ChildrenAgeTag";
 
 /**
  * BadgeInfoTooltip Component
  *
- * Affiche un bouton "?" qui révèle un tooltip explicatif des badges
+ * Affiche un bouton "?" qui révèle un tooltip explicatif des tags
  * (Vérifié, Grossesse OK, Enfants X+ ans).
  *
  * Comportement:
@@ -98,7 +98,7 @@ function BadgeInfoTooltip() {
         onClick={toggleTooltip}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        aria-label="Informations sur les badges"
+        aria-label="Informations sur les tags"
         aria-expanded={isOpen}
         className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-neutral-800 shadow-md ring-2 ring-neutral-300 transition duration-200 hover:text-emerald-600 hover:ring-emerald-600 focus:ring-2 focus:ring-emerald-300 focus:outline-none dark:bg-neutral-800 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:text-emerald-500 dark:hover:ring-emerald-500"
       >
@@ -157,14 +157,14 @@ function BadgeInfoTooltip() {
 
             {/* Titre */}
             <h3 className="mb-4 pr-8 text-lg font-bold text-neutral-800 lg:pr-0 dark:text-neutral-100">
-              Signification des badges
+              Signification des tags
             </h3>
 
-            {/* Liste des badges */}
+            {/* Liste des tags */}
             <div className="space-y-6">
-              {/* Badge Vérifié */}
+              {/* Tag Vérifié */}
               <div className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:gap-4">
-                <VerifiedBadge />
+                <VerifiedTag />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède a été confirmé comme sûr,{" "}
                   <span className="font-medium text-emerald-600 dark:text-emerald-500">
@@ -173,17 +173,17 @@ function BadgeInfoTooltip() {
                 </p>
               </div>
 
-              {/* Badge Grossesse OK */}
+              {/* Tag Grossesse OK */}
               <div className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:gap-4">
-                <PregnancyBadge variant="default" />
+                <PregnancyTag variant="default" />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède peut être utilisé sans danger pendant la grossesse.
                 </p>
               </div>
 
-              {/* Badge Enfants X+ ans */}
+              {/* Tag Enfants X+ ans */}
               <div className="flex flex-col items-start gap-2 lg:flex-row lg:items-center lg:gap-4">
-                <ChildrenAgeBadge age={"X"} />
+                <ChildrenAgeTag age={"X"} />
                 <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   Ce remède est adapté aux enfants de plus de X ans.
                 </p>
